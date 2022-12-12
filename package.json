@@ -1,0 +1,14 @@
+{
+  "name": "alfajores-malambo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch scss/index.scss:css/main.css"
+  },
+  "author": "emanuel palacio, Martin Ducau",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}
