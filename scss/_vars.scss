@@ -18,7 +18,15 @@ $txSecondary: #FFFFFF;
    list-style: none;
    text-decoration: none;
 }
-
+a{
+   color:$txSecondary ;
+   &:link, &:visited{
+      color:$txSecondary ;
+   }
+   &:hover{
+      color:$tertiary ;
+   }
+}
 html {
    scroll-behavior: smooth;
 }
