@@ -1,0 +1,32 @@
+// Colors
+$primary: #FFFFFF;
+$secondary: #1A1A1A;
+$tertiary: #FCC719;
+$quaternary: #916D2A;
+$txPrimary: #1A1A1A;
+$txSecondary: #FFFFFF;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// Reset Browser Default Styles
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+// Background Image
+
+body {
+   background: linear-gradient(0deg, #00000033, #00000033), url('https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2FFondo%20Letras.png?alt=media&token=a47ef0c3-ea66-4c40-9d3c-4b6cc8f97315');
+   background-repeat: repeat-y;
+   font-family: Inter;
+}

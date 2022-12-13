@@ -1,3 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2FFondo%20Letras.png?alt=media&token=a47ef0c3-ea66-4c40-9d3c-4b6cc8f97315");
+  background-repeat: repeat-y;
+  font-family: Inter;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: "x main y";
+  min-height: 100vh;
+}
+
+.container {
+  grid-area: main;
+  background: url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2Fbanner%20fondo.png?alt=media&token=04d1cda3-f061-4f80-bd8c-ec8f165e5f0b");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+}
+
+.siteHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.siteHeader img {
+  max-width: 50%;
+  height: 15%;
+}
+.siteHeader .welcome {
+  width: 25vw;
+}
+.siteHeader .welcome h1 {
+  font-family: Koulen;
+  line-height: 70%;
+  font-size: 2rem;
+}
+.siteHeader .welcome h2 {
+  font-family: Inter;
+  text-transform: uppercase;
+}
+.siteHeader .welcome p {
+  font-size: 1rem;
+}
+
+.mascotContainer {
+  position: relative;
+  top: 30vh;
+  right: 5vw;
+  float: right;
+}
+.mascotContainer img {
+  max-width: 100%;
+  height: 10%;
+}
+
+.innerContainer {
+  position: relative;
+  height: 100%;
+  padding-top: 10vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.innerContainer h3 {
+  font-family: Koulen;
+  font-size: 1.8rem;
+}
+.innerContainer .aboutUs {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.innerContainer .aboutUs .aboutUsText {
+  max-width: 20vw;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 /*# sourceMappingURL=main.css.map */
