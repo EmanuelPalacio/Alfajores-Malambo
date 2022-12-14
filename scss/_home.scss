@@ -1,4 +1,4 @@
-main {
+.homePage {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-areas: "x main y";
@@ -7,7 +7,7 @@ main {
 
 .container {
   grid-area: main;
-  background: url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2Fbanner%20fondo.png?alt=media&token=04d1cda3-f061-4f80-bd8c-ec8f165e5f0b");
+  background-image: url('https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0 1.5rem 1.5rem 1.5rem;

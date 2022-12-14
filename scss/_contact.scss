@@ -1,0 +1,31 @@
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact__content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-width: 80%;
+    background-color: $primary;
+    min-height: 100vh;
+
+    .contact__header{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 35vh;
+      width: 105%;
+      background:url('https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png'), url('https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg');
+      background-repeat: no-repeat;
+      background-size: 150px, cover;
+      background-position: 85% 100% , 0 100%;
+      
+        .contact__tittle{
+          margin-left: 10%;
+        }
+    }
+  }
+} 

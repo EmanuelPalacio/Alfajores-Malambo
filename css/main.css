@@ -44,7 +44,7 @@ body {
   z-index: 9;
 }
 
-main {
+.homePage {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-areas: "x main y";
@@ -53,7 +53,7 @@ main {
 
 .container {
   grid-area: main;
-  background: url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2Fbanner%20fondo.png?alt=media&token=04d1cda3-f061-4f80-bd8c-ec8f165e5f0b");
+  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0 1.5rem 1.5rem 1.5rem;
@@ -120,6 +120,35 @@ main {
   max-width: 20vw;
   display: flex;
   flex-flow: column nowrap;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact__content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  min-width: 80%;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+}
+.contact .contact__content .contact__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 35vh;
+  width: 105%;
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
+  background-repeat: no-repeat;
+  background-size: 150px, cover;
+  background-position: 85% 100%, 0 100%;
+}
+.contact .contact__content .contact__header .contact__tittle {
+  margin-left: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
