@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 
   .contact__content{
     display: flex;
@@ -10,7 +11,7 @@
     flex-direction: column;
     min-width: 80%;
     background-color: $primary;
-    min-height: 100vh;
+
 
     .contact__header{
       display: flex;
@@ -26,6 +27,69 @@
         .contact__tittle{
           margin-left: 10%;
         }
+    }
+    .contact__body{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      
+      h2 span{
+        padding: 5px 30px;
+        border-bottom: 2px solid $tertiary;
+      }
+
+      .contact__sections{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        min-height: 55vh;
+        .contact__form{
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          width: 70%;
+          gap: 15px;
+          grid-template-areas: 
+          "name     email"
+          "textarea textarea"
+          "btn      btn";
+
+          #name{
+            grid-area: name ;
+          }
+          #email{
+            grid-area: email;
+          }
+          #message{
+            padding: 10px;
+            grid-area: textarea;
+            border-color: $quaternary;
+            border-radius: 8px;
+            resize: none;
+            outline: none;
+          }
+          input{
+            padding: 0 10px;
+            border: 1px solid $quaternary;
+            height: 50px;
+            width: 250px;
+            border-radius: 8px;
+            outline: none;
+          }
+          .btn-contact{
+            grid-area: btn;
+            justify-self:center;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 50px;
+            width: 160px;
+            background-color: $tertiary;
+          }
+          
+        }
+      }
     }
   }
 } 
