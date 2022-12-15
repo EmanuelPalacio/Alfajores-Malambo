@@ -72,6 +72,34 @@ body {
   z-index: 9;
 }
 
+.footer {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  height: 230px;
+  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671070267/footer/Footbarfondo_s7dmgj.png");
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+.footer img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer h5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 200;
+}
+.footer li {
+  margin: 2vh 0;
+}
+.footer li i {
+  font-size: 20px;
+  margin-right: 1vw;
+}
+
 main {
   display: grid;
   grid-template-columns: 10% 80% 10%;
