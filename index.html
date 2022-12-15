@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="./css/main.css">
    <title>Alfajores Malambo</title>
 </head>
@@ -12,47 +13,107 @@
 <body>
 
    <header>
-      
+      <nav class="menu">
+         <ul class="menu__list">
+            <li class="menu__item"><a href="./pages/products.html">Products</a></li>
+            <li class="menu__item"><a href="/"><img
+                     src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670954386/menu/Logo_lkwjeo.png"
+                     alt="logo alfajores malambo"></a></li>
+            <li class="menu__item"><a href="./pages/contact.html">Contacto</a></li>
+         </ul>
+      </nav>
    </header>
 
    <main>
       <section class="container">
 
-         <div class="siteHeader">
-            <img
-               src="https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/home%2Falfajores_portada.png?alt=media&token=73cf037b-cbdb-4266-a9b4-faf639902893"
-               alt="Alfajores">
 
-            <div class="welcome">
-               <h1>Somos Creadores</h1>
-               <h2>De Sabores</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugit modi pariatur?</p>
+         <div class="container__header">
+
+            <div class="container__header__welcome">
+               <div class="container__header__welcome__image">
+                  <img
+                     src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1671055311/home/alfajores_portada_p0wfrg.png"
+                     alt="Alfajores">
+               </div>
+               <div class="container__header__welcome__text">
+                  <h1>Somos Creadores</h1>
+                  <h2>De Sabores</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus consequat cursus.</p>
+               </div>
+            </div>
+            <div class="container__header__mascot">
+               <img src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"
+                  alt="gauchito">
+            </div>
+         </div>
+
+         <div class="container__main">
+            <div class="container__main__variedades">
+               <div class="container__main__variedades__titulo">
+                  <h3>Explorá Nuestras Variedades</h3>
+                  <hr>
+               </div>
+               <div class="container__main__variedades__menu">
+                  <div class="container__main__variedades__menu__item">
+                     <button class="btn"><a href="./pages/products.html#clasicos" class="btn">Clásicos</a></button>
+                  </div>
+                  <div class="container__main__variedades__menu__item">
+                     <button class="btn"><a href="./pages/products.html#postres">Postres</a></button>
+                  </div>
+                  <div class="container__main__variedades__menu__item">
+                     <button class="btn"><a href="./pages/products.html#varietales">Varietales</a></button>
+                  </div>
+                  <div class="container__main__variedades__menu__item">
+                     <button class="btn"><a href="./pages/products.html#frutales">Frutales</a></button>
+                  </div>
+                  <div class="container__main__variedades__menu__item">
+                     <button class="btn"><a href="./pages/products.html#licores">Licores</a></button>
+                  </div>
+               </div>
             </div>
 
-            <div class="mascotContainer">
-               <img
-                  src="https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2FMascota.png?alt=media&token=1d5e64cf-b50f-45de-b62e-193a16748d83"
-                  alt="gauchito">
+            <div class="container__main__roulette">
+               <div class="container__main__roulette__titulo">
+                  <h3>Descubri Tu Sabor del Día</h3>
+                  <hr>
+               </div>
+               <div class="container__main__roulette__placeholder">
+                  <img
+                     src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1671064104/products/mantecol-min_lmecwj.png"
+                     alt="ruleta">
+                  <button class="btn">¡Quiero Mi Sabor!</button>
+               </div>
+            </div>
+
+            <div class="container__main__about">
+               <div class="container__main__about">
+                  <div class="container__main__about__text">
+                     <h3>Nosotros</h3>
+                     <h4>Malambo</h4>
+                     <p>Nuestra empresa familiar nació en el año 2018 con la ilusión de hacer alfajores con sabores
+                        inspirados en las distintas regiones de nuestro país. Fusionamos la alta pastelería con
+                        productos
+                        naturales, sin esencias ni saborizantes, como licores o jaleas regionales. Nos enorgullece
+                        elaborar
+                        productos gourmet, totalmente exclusivos y artesanales.
+                     </p>
+                  </div>
+                  <div class="container__main__about__picture">
+                     <img
+                        src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1671065944/home/imagen_nosotros_ttxbal.png"
+                        alt="nosotros">
+                  </div>
+               </div>
             </div>
 
          </div>
 
-         <div class="innerContainer">
-            <div class="displayVar">
-               <h3>Explora Nuestras Variedades</h3>
-            </div>
-
-            <div class="rouletteContainer">
-               <h3>Descubri Tu Sabor del Día</h3>
-            </div>
-
-            <div class="aboutUs">
-               <div class="aboutUsText">
-                  <h3>Nosotros</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, incidunt.</p>
-               </div>
-            </div>
-
+         <div class="container__whatsappbtn">
+            <a href="https://walink.co/7cb69c"
+               class="float" target="_blank">
+               <i class="fa fa-whatsapp my-float"></i>
+            </a>
          </div>
 
       </section>
