@@ -55,16 +55,29 @@
           "textarea textarea"
           "btn      btn";
 
-          #name{
-            grid-area: name ;
+          .contact__name{
+            grid-area: name;
+            height: 70px;
           }
-          #email{
+          .contact__email{
             grid-area: email;
+            height: 70px;
           }
-          #message{
-            padding: 10px;
+          .contact__message{
             grid-area: textarea;
-            border-color: $quaternary;
+          }
+          .error {   
+              display: none;
+              text-align: start;
+              color: red;
+          }
+          .error--active{
+              display: block;
+          }
+          textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $quaternary;
             border-radius: 8px;
             resize: none;
             outline: none;
@@ -76,6 +89,12 @@
             width: 250px;
             border-radius: 8px;
             outline: none;
+          }
+          .validate--true{
+            border-color: green;
+          }
+          .validate--false{
+            border-color: red;
           }
           .btn-contact{
             grid-area: btn;

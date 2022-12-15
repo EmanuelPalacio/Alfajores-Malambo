@@ -174,16 +174,29 @@ body {
   gap: 15px;
   grid-template-areas: "name     email" "textarea textarea" "btn      btn";
 }
-.contact .contact__content .contact__body .contact__sections .contact__form #name {
+.contact .contact__content .contact__body .contact__sections .contact__form .contact__name {
   grid-area: name;
+  height: 70px;
 }
-.contact .contact__content .contact__body .contact__sections .contact__form #email {
+.contact .contact__content .contact__body .contact__sections .contact__form .contact__email {
   grid-area: email;
+  height: 70px;
 }
-.contact .contact__content .contact__body .contact__sections .contact__form #message {
-  padding: 10px;
+.contact .contact__content .contact__body .contact__sections .contact__form .contact__message {
   grid-area: textarea;
-  border-color: #916D2A;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .error {
+  display: none;
+  text-align: start;
+  color: red;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .error--active {
+  display: block;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #916D2A;
   border-radius: 8px;
   resize: none;
   outline: none;
@@ -195,6 +208,12 @@ body {
   width: 250px;
   border-radius: 8px;
   outline: none;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .validate--true {
+  border-color: green;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .validate--false {
+  border-color: red;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .btn-contact {
   grid-area: btn;
