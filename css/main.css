@@ -31,14 +31,24 @@ html {
 .btn a:hover {
   color: #ffffff;
 }
-
-body {
+.btn a a {
+  color: #ffffff;
+}
+.btn a a:link, .btn a a:visited {
+  color: #ffffff;
+}
+.btn a a:hover {
+  color: #fcc719;
+}
+.btn a html {
+  scroll-behavior: smooth;
+}
+.btn a body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
   background-repeat: repeat-y;
   font-family: Inter;
 }
-
-.float {
+.btn a .float {
   position: fixed;
   width: 69px;
   height: 69px;
@@ -51,8 +61,7 @@ body {
   font-size: 40px;
   z-index: 99;
 }
-
-.my-float {
+.btn a .my-float {
   margin-top: 16px;
 }
 

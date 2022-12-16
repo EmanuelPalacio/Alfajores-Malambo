@@ -41,6 +41,17 @@ html {
   &:hover {
     color: $txSecondary;
   }
+a{
+   color:$txSecondary ;
+   &:link, &:visited{
+      color:$txSecondary ;
+   }
+   &:hover{
+      color:$tertiary ;
+   }
+}
+html {
+   scroll-behavior: smooth;
 }
 
 // Background Image
@@ -70,4 +81,5 @@ body {
 
 .my-float {
   margin-top: 16px;
+}
 }
