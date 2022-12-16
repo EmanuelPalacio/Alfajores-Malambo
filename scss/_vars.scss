@@ -1,0 +1,73 @@
+// Colors
+$primary: #ffffff;
+$secondary: #1a1a1a;
+$tertiary: #fcc719;
+$quaternary: #916d2a;
+$txPrimary: #1a1a1a;
+$txSecondary: #ffffff;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+// Reset Browser Default Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: $txSecondary;
+  &:link,
+  &:visited {
+    color: $txSecondary;
+  }
+  &:hover {
+    color: $tertiary;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.btn a {
+  color: $txPrimary;
+  &:link,
+  &:visited {
+    color: $txPrimary;
+  }
+  &:hover {
+    color: $txSecondary;
+  }
+}
+
+// Background Image
+
+body {
+  background: linear-gradient(0deg, #00000033, #00000033),
+    url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
+  background-repeat: repeat-y;
+  font-family: Inter;
+}
+
+// WhatsApp Button
+
+.float {
+  position: fixed;
+  width: 69px;
+  height: 69px;
+  bottom: 40px;
+  right: 40px;
+  background: #00b52c;
+  color: $primary;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  z-index: 99;
+}
+
+.my-float {
+  margin-top: 16px;
+}
