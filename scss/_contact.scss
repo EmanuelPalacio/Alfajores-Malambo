@@ -1,0 +1,117 @@
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
+  .contact__content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-width: 80%;
+    background-color: $primary;
+    margin-bottom: 10vh;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+
+
+    .contact__header{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 35vh;
+      width: 105%;
+      background:url('https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png'), url('https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg');
+      background-repeat: no-repeat;
+      background-size: 150px, cover;
+      background-position: 85% 100% , 0 100%;
+      
+        .contact__tittle{
+          margin-left: 10%;
+        }
+    }
+    .contact__body{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      
+      h2 span{
+        padding: 5px 30px;
+        border-bottom: 2px solid $tertiary;
+      }
+
+      .contact__sections{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        min-height: 55vh;
+        .contact__form{
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          width: 70%;
+          gap: 15px;
+          grid-template-areas: 
+          "name     email"
+          "textarea textarea"
+          "btn      btn";
+
+          .contact__name{
+            grid-area: name;
+            height: 70px;
+          }
+          .contact__email{
+            grid-area: email;
+            height: 70px;
+          }
+          .contact__message{
+            grid-area: textarea;
+          }
+          .error {   
+              display: none;
+              text-align: start;
+              color: red;
+          }
+          .error--active{
+              display: block;
+          }
+          textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $quaternary;
+            border-radius: 8px;
+            resize: none;
+            outline: none;
+          }
+          input{
+            padding: 0 10px;
+            border: 1px solid $quaternary;
+            height: 50px;
+            width: 250px;
+            border-radius: 8px;
+            outline: none;
+          }
+          .validate--true{
+            border-color: green;
+          }
+          .validate--false{
+            border-color: red;
+          }
+          .btn-contact{
+            grid-area: btn;
+            justify-self:center;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 50px;
+            width: 160px;
+            background-color: $tertiary;
+          }
+          
+        }
+      }
+    }
+  }
+} 

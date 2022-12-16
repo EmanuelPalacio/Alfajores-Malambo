@@ -31,24 +31,14 @@ html {
 .btn a:hover {
   color: #ffffff;
 }
-.btn a a {
-  color: #ffffff;
-}
-.btn a a:link, .btn a a:visited {
-  color: #ffffff;
-}
-.btn a a:hover {
-  color: #fcc719;
-}
-.btn a html {
-  scroll-behavior: smooth;
-}
-.btn a body {
+
+body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
   background-repeat: repeat-y;
   font-family: Inter;
 }
-.btn a .float {
+
+.float {
   position: fixed;
   width: 69px;
   height: 69px;
@@ -61,7 +51,8 @@ html {
   font-size: 40px;
   z-index: 99;
 }
-.btn a .my-float {
+
+.my-float {
   margin-top: 16px;
 }
 
@@ -109,7 +100,7 @@ html {
   margin-right: 1vw;
 }
 
-main {
+.homePage {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-areas: "x main y";
@@ -293,6 +284,113 @@ main {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 2vh;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.contact .contact__content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  min-width: 80%;
+  background-color: #ffffff;
+  margin-bottom: 10vh;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.contact .contact__content .contact__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 35vh;
+  width: 105%;
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
+  background-repeat: no-repeat;
+  background-size: 150px, cover;
+  background-position: 85% 100%, 0 100%;
+}
+.contact .contact__content .contact__header .contact__tittle {
+  margin-left: 10%;
+}
+.contact .contact__content .contact__body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.contact .contact__content .contact__body h2 span {
+  padding: 5px 30px;
+  border-bottom: 2px solid #fcc719;
+}
+.contact .contact__content .contact__body .contact__sections {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-height: 55vh;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 15px;
+  grid-template-areas: "name     email" "textarea textarea" "btn      btn";
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .contact__name {
+  grid-area: name;
+  height: 70px;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .contact__email {
+  grid-area: email;
+  height: 70px;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .contact__message {
+  grid-area: textarea;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .error {
+  display: none;
+  text-align: start;
+  color: red;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .error--active {
+  display: block;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #916d2a;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form input {
+  padding: 0 10px;
+  border: 1px solid #916d2a;
+  height: 50px;
+  width: 250px;
+  border-radius: 8px;
+  outline: none;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .validate--true {
+  border-color: green;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .validate--false {
+  border-color: red;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .btn-contact {
+  grid-area: btn;
+  justify-self: center;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 50px;
+  width: 160px;
+  background-color: #fcc719;
 }
 
 /*# sourceMappingURL=main.css.map */
