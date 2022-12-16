@@ -7,71 +7,169 @@ main {
 
 .container {
   grid-area: main;
-  background: url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2Fbanner%20fondo.png?alt=media&token=04d1cda3-f061-4f80-bd8c-ec8f165e5f0b");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 0 1.5rem 1.5rem 1.5rem;
-}
-
-.siteHeader {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  img {
-    max-width: 50%;
-    height: 15%;
-  }
-  .welcome {
-    width: 25vw;
-    h1 {
-      font-family: Koulen;
-      line-height: 70%;
-      font-size: 2rem;
-    }
-    h2 {
-      font-family: Inter;
-      text-transform: uppercase;
-    }
-    p {
-      font-size: 1rem;
-    }
-  }
-}
-
-.mascotContainer {
-  position: relative;
-  top: 30vh;
-  right: 5vw;
-  float: right;
-  img {
-    max-width: 100%;
-    height: 10%;
-  }
-}
-
-.innerContainer {
-  position: relative;
-  height: 100%;
-  padding-top: 10vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $primary;
-  border-radius: 30px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-  z-index: -1;
-  h3 {
-    font-family: Koulen;
-    font-size: 1.8rem;
-  }
-  .aboutUs {
+  flex-flow: column;
+  &__header {
     display: flex;
-    flex-flow: row nowrap;
-    .aboutUsText {
-      max-width: 20vw;
+    flex-flow: column;
+    background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671049867/menu/BannerFondo_phauic_izecml.svg");
+    background-repeat: no-repeat;
+    background-size: 84vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: -2vh;
+    padding-left: 2vw;
+    margin-right: -2vh;
+    padding-right: 2vw;
+    padding-bottom: 7vh;
+    margin-bottom: -14vh;
+    z-index: 2;
+
+    &__welcome {
       display: flex;
-      flex-flow: column nowrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &__image {
+        margin: 0 5vw;
+        max-width: 30vw;
+        img {
+          width: 100%;
+        }
+      }
+      &__text {
+        max-width: 20vw;
+        h1 {
+          font-family: "Bebas Neue", cursive;
+          line-height: 70%;
+          font-size: 53px;
+        }
+        h2 {
+          font-family: "Inter", sans-serif;
+          text-transform: uppercase;
+          font-size: 32px;
+          font-weight: 200;
+        }
+        p {
+          margin-top: 1rem;
+          font-size: 22px;
+        }
+      }
+    }
+    &__mascot {
+      position: relative;
+      bottom: 15vh;
+      right: 15vw;
+      align-self: flex-end;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      overflow: visible;
+      img {
+        max-width: 10rem;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary;
+    padding-top: 15vh;
+    margin-bottom: 10vh;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    h3 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 53px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+    hr {
+      height: 3px;
+      border: none;
+      background-color: $tertiary;
+      margin: 0 auto 5rem;
+      width: 25vw;
+    }
+    &__variedades__menu {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-bottom: 15vh;
+      &__item:nth-child(1) {
+        @include overlay(
+          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg")
+        );
+      }
+      &__item:nth-child(2) {
+        @include overlay(
+          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg")
+        );
+      }
+      &__item:nth-child(3) {
+        @include overlay(
+          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg")
+        );
+      }
+      &__item:nth-child(4) {
+        @include overlay(
+          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg")
+        );
+      }
+      &__item:nth-child(5) {
+        @include overlay(
+          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg")
+        );
+      }
+      &__item {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 216px;
+        height: 169px;
+        button {
+          position: relative;
+          top: 4vh;
+          @include buttons(171px, 55px)  
+        }
+      }
+    }
+    &__roulette {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      margin-bottom: 15vh;
+    &__placeholder {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      button {
+        @include buttons(226px, 55px)  
+      }
+    }
+    }
+    &__about{
+      display: flex;
+      flex-flow: row;
+      gap: 18vw;
+      margin-bottom: 10vh;
+      &__text {
+        width: 464px;
+        text-align: justify;
+        h3{
+          text-align: left;
+          line-height: 70%;
+        }
+        h4 {
+          font-size: 24px;
+          text-transform: uppercase;
+          margin-bottom: 2vh;
+        }
+      }
     }
   }
 }

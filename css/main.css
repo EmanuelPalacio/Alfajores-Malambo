@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   margin: 0;
@@ -9,23 +9,60 @@
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 a:link, a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 a:hover {
-  color: #FCC719;
+  color: #fcc719;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2FFondo%20Letras.png?alt=media&token=a47ef0c3-ea66-4c40-9d3c-4b6cc8f97315");
+.btn a {
+  color: #1a1a1a;
+}
+.btn a:link, .btn a:visited {
+  color: #1a1a1a;
+}
+.btn a:hover {
+  color: #ffffff;
+}
+.btn a a {
+  color: #ffffff;
+}
+.btn a a:link, .btn a a:visited {
+  color: #ffffff;
+}
+.btn a a:hover {
+  color: #fcc719;
+}
+.btn a html {
+  scroll-behavior: smooth;
+}
+.btn a body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
   background-repeat: repeat-y;
   font-family: Inter;
+}
+.btn a .float {
+  position: fixed;
+  width: 69px;
+  height: 69px;
+  bottom: 40px;
+  right: 40px;
+  background: #00b52c;
+  color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  z-index: 99;
+}
+.btn a .my-float {
+  margin-top: 16px;
 }
 
 .menu {
@@ -40,8 +77,36 @@ body {
   align-items: center;
   width: 100%;
   height: 2rem;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   z-index: 9;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  height: 230px;
+  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671070267/footer/Footbarfondo_s7dmgj.png");
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+.footer img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer h5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 200;
+}
+.footer li {
+  margin: 2vh 0;
+}
+.footer li i {
+  font-size: 20px;
+  margin-right: 1vw;
 }
 
 main {
@@ -53,73 +118,181 @@ main {
 
 .container {
   grid-area: main;
-  background: url("https://firebasestorage.googleapis.com/v0/b/malambo-alfajores.appspot.com/o/common%2Fbanner%20fondo.png?alt=media&token=04d1cda3-f061-4f80-bd8c-ec8f165e5f0b");
-  background-size: contain;
+  display: flex;
+  flex-flow: column;
+}
+.container__header {
+  display: flex;
+  flex-flow: column;
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671049867/menu/BannerFondo_phauic_izecml.svg");
   background-repeat: no-repeat;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  background-size: 84vw;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: -2vh;
+  padding-left: 2vw;
+  margin-right: -2vh;
+  padding-right: 2vw;
+  padding-bottom: 7vh;
+  margin-bottom: -14vh;
+  z-index: 2;
 }
-
-.siteHeader {
+.container__header__welcome {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 }
-.siteHeader img {
-  max-width: 50%;
-  height: 15%;
+.container__header__welcome__image {
+  margin: 0 5vw;
+  max-width: 30vw;
 }
-.siteHeader .welcome {
-  width: 25vw;
+.container__header__welcome__image img {
+  width: 100%;
 }
-.siteHeader .welcome h1 {
-  font-family: Koulen;
+.container__header__welcome__text {
+  max-width: 20vw;
+}
+.container__header__welcome__text h1 {
+  font-family: "Bebas Neue", cursive;
   line-height: 70%;
-  font-size: 2rem;
+  font-size: 53px;
 }
-.siteHeader .welcome h2 {
-  font-family: Inter;
+.container__header__welcome__text h2 {
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 200;
 }
-.siteHeader .welcome p {
-  font-size: 1rem;
+.container__header__welcome__text p {
+  margin-top: 1rem;
+  font-size: 22px;
 }
-
-.mascotContainer {
+.container__header__mascot {
   position: relative;
-  top: 30vh;
-  right: 5vw;
-  float: right;
+  bottom: 15vh;
+  right: 15vw;
+  align-self: flex-end;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  overflow: visible;
 }
-.mascotContainer img {
-  max-width: 100%;
-  height: 10%;
+.container__header__mascot img {
+  max-width: 10rem;
 }
-
-.innerContainer {
-  position: relative;
-  height: 100%;
-  padding-top: 10vh;
+.container__main {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  padding-top: 15vh;
+  margin-bottom: 10vh;
   border-radius: 30px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-  z-index: -1;
+  z-index: 1;
 }
-.innerContainer h3 {
-  font-family: Koulen;
-  font-size: 1.8rem;
+.container__main h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 53px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
-.innerContainer .aboutUs {
+.container__main hr {
+  height: 3px;
+  border: none;
+  background-color: #fcc719;
+  margin: 0 auto 5rem;
+  width: 25vw;
+}
+.container__main__variedades__menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 15vh;
+}
+.container__main__variedades__menu__item:nth-child(1) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg");
+}
+.container__main__variedades__menu__item:nth-child(2) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg");
+}
+.container__main__variedades__menu__item:nth-child(3) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg");
+}
+.container__main__variedades__menu__item:nth-child(4) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg");
+}
+.container__main__variedades__menu__item:nth-child(5) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg");
+}
+.container__main__variedades__menu__item {
   display: flex;
-  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  width: 216px;
+  height: 169px;
 }
-.innerContainer .aboutUs .aboutUsText {
-  max-width: 20vw;
+.container__main__variedades__menu__item button {
+  position: relative;
+  top: 4vh;
+  position: relative;
+  top: 4vh;
+  width: 171px;
+  height: 55px;
+  background-color: #fcc719;
+  border: none;
+  border-radius: 0 26px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.container__main__roulette {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
+  justify-content: center;
+  margin-bottom: 15vh;
+}
+.container__main__roulette__placeholder {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__main__roulette__placeholder button {
+  position: relative;
+  top: 4vh;
+  width: 226px;
+  height: 55px;
+  background-color: #fcc719;
+  border: none;
+  border-radius: 0 26px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.container__main__about {
+  display: flex;
+  flex-flow: row;
+  gap: 18vw;
+  margin-bottom: 10vh;
+}
+.container__main__about__text {
+  width: 464px;
+  text-align: justify;
+}
+.container__main__about__text h3 {
+  text-align: left;
+  line-height: 70%;
+}
+.container__main__about__text h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
 }
 
 /*# sourceMappingURL=main.css.map */
