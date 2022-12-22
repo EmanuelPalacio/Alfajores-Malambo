@@ -33,12 +33,16 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.0196078431), rgba(255, 255, 255, 0.0196078431)), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
   background-repeat: repeat-y;
   font-family: Inter;
 }
 
 .float {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 69px;
   height: 69px;
@@ -51,9 +55,18 @@ body {
   font-size: 40px;
   z-index: 99;
 }
+.float:hover {
+  color: #ffffff;
+}
 
 .my-float {
-  margin-top: 16px;
+  transition: all 0.3s;
+}
+.my-float:hover {
+  transform: scale(120%);
+}
+.my-float:active {
+  color: #ffffff;
 }
 
 .faded {
@@ -251,7 +264,7 @@ body {
   flex-flow: column;
   background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
   background-repeat: no-repeat;
-  background-size: 200px, cover;
+  background-size: 210px, cover;
   background-position: 85% 100%, 0 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-left: -2vh;
@@ -280,7 +293,7 @@ body {
 }
 .container__header__welcome__text h1 {
   font-family: "Bebas Neue", cursive;
-  line-height: 70%;
+  line-height: 100%;
   font-size: 53px;
 }
 .container__header__welcome__text h2 {
@@ -346,7 +359,7 @@ body {
   width: 216px;
   height: 169px;
 }
-.container__main__variedades__menu__item button {
+.container__main__variedades__menu__item .btn {
   position: relative;
   top: 4vh;
   display: flex;
@@ -383,9 +396,13 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
   transition: all 0.3s ease;
+  mask-image: to left, rgb(0, 0, 0), rgba(0, 0, 0, 0), linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   -webkit-mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  mask-size: 50.2% 180%;
   -webkit-mask-size: 50.2% 180%;
+  mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  mask-position: left, right;
   -webkit-mask-position: left, right;
 }
 .container__main__roulette__placeholder img {
@@ -415,10 +432,6 @@ body {
   font-weight: 600;
   color: #1a1a1a;
   cursor: pointer;
-}
-.container__main__roulette__placeholder .carousel__container .btn__flavor:after {
-  position: absolute;
-  z-index: 100;
 }
 .container__main__roulette__placeholder .carousel__container .btn__hidden {
   display: none;
@@ -452,12 +465,14 @@ body {
 .container__main__about {
   display: flex;
   flex-flow: row;
-  gap: 18vw;
+  align-items: center;
   margin-bottom: 10vh;
+  max-width: 80vw;
 }
 .container__main__about__text {
-  width: 464px;
+  max-width: 30vw;
   text-align: justify;
+  margin-right: 10vw;
 }
 .container__main__about__text h3 {
   text-align: left;
@@ -483,22 +498,15 @@ body {
 }
 
 .slick-center {
-  position: relative;
   transition: all 0.5s ease-in-out !important;
   transform: scale(1.6, 1.6) !important;
   overflow-y: visible !important;
+  background-image: radial-gradient(20rem at center, rgb(255, 255, 255), rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0)) !important;
+  background-size: cover;
 }
 
 .slick-active {
   transition: all 0.5s ease-in-out !important;
-}
-
-.slick-center {
-  border: none !important;
-  box-shadow: none !important;
-  background-image: radial-gradient(20rem at center, rgb(255, 255, 255), rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0)) !important;
-  background-size: cover;
-  filter: none;
 }
 
 @keyframes kaboom {

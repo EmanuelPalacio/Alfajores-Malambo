@@ -46,7 +46,7 @@ html {
 // Background Image
 
 body {
-  background: linear-gradient(0deg, #00000033, #00000033),
+  background: linear-gradient(0deg, #ffffff05, #ffffff05),
     url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671067008/home/Fondo_Letras_obp51d.png");
   background-repeat: repeat-y;
   font-family: Inter;
@@ -55,6 +55,10 @@ body {
 // WhatsApp Button
 
 .float {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 69px;
   height: 69px;
@@ -66,8 +70,17 @@ body {
   text-align: center;
   font-size: 40px;
   z-index: 99;
+  &:hover {
+    color: $txSecondary;
+  }
 }
 
 .my-float {
-  margin-top: 16px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(120%);
+  }
+  &:active {
+    color: $txSecondary;
+  }
 }
