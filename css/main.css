@@ -56,6 +56,140 @@ body {
   margin-top: 16px;
 }
 
+.faded {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+.faded:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-collapse: separate;
+  z-index: 5;
+}
+.faded.faded-left:after {
+  box-shadow: inset 40px 0 40px -16px;
+}
+.faded.faded-right:after {
+  box-shadow: inset -40px 0 40px -16px;
+}
+.faded.faded-top:after {
+  box-shadow: inset 0 40px 40px -16px;
+}
+.faded.faded-bottom:after {
+  box-shadow: inset 0 -40px 40px -16px;
+}
+.faded.faded-left.faded-right:after {
+  box-shadow: inset 40px 0 40px -16px, inset -40px 0 40px -16px;
+}
+.faded.faded-left.faded-top:after {
+  box-shadow: inset 40px 40px 40px -16px;
+}
+.faded.faded-right.faded-bottom:after {
+  box-shadow: inset -40px -40px 40px -16px;
+}
+.faded.faded-top.faded-right:after {
+  box-shadow: inset -40px 40px 40px -16px;
+}
+.faded.faded-top.faded-bottom:after {
+  box-shadow: inset 0 40px 40px -16px, inset 0 -40px 40px -16px;
+}
+.faded.faded-left.faded-bottom:after {
+  box-shadow: inset 40px -40px 40px -16px;
+}
+.faded.faded-left.faded-top.faded-bottom:after {
+  box-shadow: inset 20px 0 40px 16px;
+}
+.faded.faded-left.faded-top.faded-right:after {
+  box-shadow: inset 0 20px 40px 16px;
+}
+.faded.faded-all:after, .faded.faded-left.faded-top.faded-right.faded-bottom:after {
+  box-shadow: inset 0 0 40px 16px;
+}
+.faded.faded-narrow.faded-left:after {
+  box-shadow: inset 20px 0 20px -10px;
+}
+.faded.faded-narrow.faded-right:after {
+  box-shadow: inset -20px 0 20px -10px;
+}
+.faded.faded-narrow.faded-top:after {
+  box-shadow: inset 0 20px 20px -10px;
+}
+.faded.faded-narrow.faded-bottom:after {
+  box-shadow: inset 0 -20px 20px -10px;
+}
+.faded.faded-narrow.faded-left.faded-right:after {
+  box-shadow: inset 20px 0 20px -10px, inset -20px 0 20px -10px;
+}
+.faded.faded-narrow.faded-left.faded-top:after {
+  box-shadow: inset 20px 20px 20px -10px;
+}
+.faded.faded-narrow.faded-right.faded-bottom:after {
+  box-shadow: inset -20px -20px 20px -10px;
+}
+.faded.faded-narrow.faded-top.faded-right:after {
+  box-shadow: inset -20px 20px 20px -10px;
+}
+.faded.faded-narrow.faded-top.faded-bottom:after {
+  box-shadow: inset 0 20px 20px -10px, inset 0 -20px 20px -10px;
+}
+.faded.faded-narrow.faded-left.faded-bottom:after {
+  box-shadow: inset 20px -20px 20px -10px;
+}
+.faded.faded-narrow.faded-left.faded-top.faded-bottom:after {
+  box-shadow: inset 10px 0 20px 10px;
+}
+.faded.faded-narrow.faded-left.faded-top.faded-right:after {
+  box-shadow: inset 0 10px 20px 10px;
+}
+.faded.faded-narrow.faded-all:after, .faded.faded-narrow.faded-left.faded-top.faded-right.faded-bottom:after {
+  box-shadow: inset 0 0 20px 10px;
+}
+.faded.faded-wide.faded-left:after {
+  box-shadow: inset 100px 0 100px 0px;
+}
+.faded.faded-wide.faded-right:after {
+  box-shadow: inset -100px 0 100px 0px;
+}
+.faded.faded-wide.faded-top:after {
+  box-shadow: inset 0 100px 100px 0px;
+}
+.faded.faded-wide.faded-bottom:after {
+  box-shadow: inset 0 -100px 100px 0px;
+}
+.faded.faded-wide.faded-left.faded-right:after {
+  box-shadow: inset 100px 0 100px 0px, inset -100px 0 100px 0px;
+}
+.faded.faded-wide.faded-left.faded-top:after {
+  box-shadow: inset 100px 100px 100px 0px;
+}
+.faded.faded-wide.faded-right.faded-bottom:after {
+  box-shadow: inset -100px -100px 100px 0px;
+}
+.faded.faded-wide.faded-top.faded-right:after {
+  box-shadow: inset -100px 100px 100px 0px;
+}
+.faded.faded-wide.faded-top.faded-bottom:after {
+  box-shadow: inset 0 100px 100px 0px, inset 0 -100px 100px 0px;
+}
+.faded.faded-wide.faded-left.faded-bottom:after {
+  box-shadow: inset 100px -100px 100px 0px;
+}
+.faded.faded-wide.faded-left.faded-top.faded-bottom:after {
+  box-shadow: inset 50px 0 100px 0px;
+}
+.faded.faded-wide.faded-left.faded-top.faded-right:after {
+  box-shadow: inset 0 50px 100px 0px;
+}
+.faded.faded-wide.faded-all:after, .faded.faded-wide.faded-left.faded-top.faded-right.faded-bottom:after {
+  box-shadow: inset 0 0 100px 0px;
+}
+
 .menu {
   display: flex;
   align-items: flex-end;
@@ -115,9 +249,10 @@ body {
 .container__header {
   display: flex;
   flex-flow: column;
-  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671049867/menu/BannerFondo_phauic_izecml.svg");
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
   background-repeat: no-repeat;
-  background-size: 84vw;
+  background-size: 200px, cover;
+  background-position: 85% 100%, 0 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-left: -2vh;
   padding-left: 2vw;
@@ -157,19 +292,6 @@ body {
 .container__header__welcome__text p {
   margin-top: 1rem;
   font-size: 22px;
-}
-.container__header__mascot {
-  position: relative;
-  bottom: 15vh;
-  right: 15vw;
-  align-self: flex-end;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  overflow: visible;
-}
-.container__header__mascot img {
-  max-width: 10rem;
 }
 .container__main {
   display: flex;
@@ -227,6 +349,10 @@ body {
 .container__main__variedades__menu__item button {
   position: relative;
   top: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   position: relative;
   top: 4vh;
   width: 171px;
@@ -245,14 +371,37 @@ body {
   flex-flow: column;
   justify-content: center;
   margin-bottom: 15vh;
+  align-items: center;
 }
 .container__main__roulette__placeholder {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 60vw;
+  overflow-x: hidden;
+  overflow-y: visible;
+  transition: all 0.3s ease;
+  -webkit-mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  -webkit-mask-size: 50.2% 180%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left, right;
 }
-.container__main__roulette__placeholder button {
+.container__main__roulette__placeholder img {
+  margin: 0 10rem;
+}
+.container__main__roulette__placeholder .carousel__container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container__main__roulette__placeholder .carousel__container .btn__flavor {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   position: relative;
   top: 4vh;
   width: 226px;
@@ -265,6 +414,40 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: #1a1a1a;
+  cursor: pointer;
+}
+.container__main__roulette__placeholder .carousel__container .btn__flavor:after {
+  position: absolute;
+  z-index: 100;
+}
+.container__main__roulette__placeholder .carousel__container .btn__hidden {
+  display: none;
+}
+.container__main__roulette .btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: 4vh;
+  width: 226px;
+  height: 55px;
+  background-color: #fcc719;
+  border: none;
+  border-radius: 0 26px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  position: inherit;
+  top: auto;
+  cursor: pointer;
+}
+.container__main__roulette .link {
+  color: #916d2a;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .container__main__about {
   display: flex;
@@ -284,6 +467,65 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 2vh;
+}
+
+.slick-track {
+  transition: all 0.5s ease-in-out !important;
+}
+
+.slick-list {
+  transition: all 0.5s ease-in-out !important;
+  transform: scale(0.6, 0.6) !important;
+  height: 50vh;
+  max-height: 100%;
+  overflow: visible !important;
+  padding: 0 60rem !important;
+}
+
+.slick-center {
+  position: relative;
+  transition: all 0.5s ease-in-out !important;
+  transform: scale(1.6, 1.6) !important;
+  overflow-y: visible !important;
+}
+
+.slick-active {
+  transition: all 0.5s ease-in-out !important;
+}
+
+.slick-center {
+  border: none !important;
+  box-shadow: none !important;
+  background-image: radial-gradient(20rem at center, rgb(255, 255, 255), rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0)) !important;
+  background-size: cover;
+  filter: none;
+}
+
+@keyframes kaboom {
+  0% {
+    background-size: 0px, cover;
+  }
+  25% {
+    background-size: 600px, cover;
+  }
+  50% {
+    background-size: 0px, cover;
+  }
+  75% {
+    background-size: 600px, cover;
+  }
+  100% {
+    background-size: 0px, cover;
+  }
+}
+.fireworks {
+  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671716661/home/Animaci%C3%B3n_xgnbtz.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  animation: kaboom 1s;
+  animation-iteration-count: 3;
+  transition: all 0.3s ease-in-out;
+  background-size: 0;
 }
 
 .contact {

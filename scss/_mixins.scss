@@ -4,16 +4,115 @@
 }
 
 @mixin buttons($wt, $ht) {
-   position: relative;
-   top: 4vh;
-   width: $wt;
-   height: $ht;
-   background-color: $tertiary;
-   border: none;
-   border-radius: 0 26px;
-   font-family: "Inter", sans-serif;
-   text-transform: uppercase;
-   font-size: 20px;
-   font-weight: 600;
-   color: $secondary;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: 4vh;
+  width: $wt;
+  height: $ht;
+  background-color: $tertiary;
+  border: none;
+  border-radius: 0 26px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: $secondary;
+}
+
+@mixin faded($offset, $blur-radius, $spread-radius)
+{
+    &.faded-left:after {
+        box-shadow: inset $offset 0 $blur-radius (-$spread-radius);
+    }
+
+    &.faded-right:after {
+        box-shadow: inset (-$offset) 0 $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top:after {
+       box-shadow: inset 0 $offset $blur-radius (-$spread-radius);
+    }
+
+    &.faded-bottom:after {
+        box-shadow: inset 0 (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-right:after {
+        box-shadow: inset $offset 0 $blur-radius (-$spread-radius), inset (-$offset) 0 $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-top:after {
+        box-shadow: inset $offset ($offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-right.faded-bottom:after {
+        box-shadow: inset (-$offset) (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top.faded-right:after {
+        box-shadow: inset (-$offset) $offset $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top.faded-bottom:after {
+       box-shadow: inset 0 $offset $blur-radius (-$spread-radius), inset 0 (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-bottom:after {
+        box-shadow: inset $offset (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-top.faded-bottom:after {
+        box-shadow: inset calc($offset/2) 0 $blur-radius $spread-radius;
+    }
+
+    &.faded-left.faded-top.faded-right:after {
+        box-shadow: inset 0 calc($offset/2) $blur-radius $spread-radius;
+    }
+
+    &.faded-all:after, &.faded-left.faded-top.faded-right.faded-bottom:after {
+        box-shadow: inset 0 0 $blur-radius $spread-radius;
+    }
+}
+
+$faded-offset: 40px !default;
+$faded-blur-radius: 40px !default;
+$faded-spread-radius: 16px !default;
+
+$faded-narrow-offset: 20px !default;
+$faded-narrow-blur-radius: 20px !default;
+$faded-narrow-spread-radius: 10px !default;
+
+$faded-wide-offset: 100px !default;
+$faded-wide-blur-radius: 100px !default;
+$faded-wide-spread-radius: 0px !default;
+
+.faded {
+    position: relative;
+    display: inline-block;
+    color: white;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-collapse: separate;
+        z-index: 5;
+    }
+
+    @include faded($faded-offset, $faded-blur-radius, $faded-spread-radius);
+
+    &.faded-narrow {
+        @include faded($faded-narrow-offset, $faded-narrow-blur-radius, $faded-narrow-spread-radius);
+    }
+
+    &.faded-wide {
+        @include faded($faded-wide-offset, $faded-wide-blur-radius, $faded-wide-spread-radius);
+    }
 }
