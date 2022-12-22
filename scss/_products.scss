@@ -1,0 +1,83 @@
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-width: 80%;
+    background-color: $primary;
+    margin-bottom: 10vh;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    min-height: 55vh;
+    &__header {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 35vh;
+      width: 105%;
+      background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"),
+        url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
+      background-repeat: no-repeat;
+      background-size: 150px, cover;
+      background-position: 85% 100%, 0 100%;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      &__title {
+        margin-left: 112px;
+        margin-bottom: 149px;
+        h1 {
+          font-family: "Bebas Neue", cursive;
+          line-height: 100%;
+          font-size: 53px;
+        }
+
+        h2 {
+          font-family: "Inter", sans-serif;
+          text-transform: uppercase;
+          font-size: 32px;
+          font-weight: 200;
+        }
+      }
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      &__title {
+        h3 {
+          font-family: "Bebas Neue", cursive;
+          font-size: 53px;
+          letter-spacing: 0.03em;
+          text-align: center;
+        }
+
+        hr {
+          height: 3px;
+          border: none;
+          background-color: $tertiary;
+          margin: 0 auto 5rem;
+          width: 25vw;
+        }
+      }
+      &__alfajores {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-gap: 2vw;
+         justify-content: center;
+         align-items: center;
+         img {
+            max-width: 198px;
+         }
+         span {
+            display: none;
+         }
+      }
+    }
+  }
+}

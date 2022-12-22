@@ -1,12 +1,11 @@
 .home {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: "x main y";
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  grid-area: main;
+  min-width: 80%;
   display: flex;
   flex-flow: column;
 
@@ -158,6 +157,7 @@
         align-items: center;
         width: 100%;
         max-width: 60vw;
+        min-height: 60vh;
         overflow-x: hidden;
         overflow-y: visible;
         transition: all 0.3s ease;

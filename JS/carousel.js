@@ -1,17 +1,17 @@
 import getData from "./getData.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
-  const datos = "../data/products.json";
-  const products = await getData(datos);
-  const contenedor = document.getElementById("roulette");
+  const data = "../data/products.json";
+  const products = await getData(data);
+  const container = document.getElementById("roulette");
 
   products.forEach((product) => {
     const div = document.createElement("div");
     div.classList.add("carousel__container");
-    div.innerHTML = `<img class='carousel__container__alfajor' src=${product.img}>
+    div.innerHTML = `<img class='carousel__container__alfajor' src=${product.img} alt=${product.name}>
                       <a class='btn__hidden btn__flavor' href='../pages/products.html#${product.name}'>${product.name}</a>
                    `;
-    contenedor.appendChild(div);
+    container.appendChild(div);
   });
 
   $(document).ready(function () {

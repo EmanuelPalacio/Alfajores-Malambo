@@ -248,14 +248,13 @@ body {
 }
 
 .home {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: "x main y";
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  grid-area: main;
+  min-width: 80%;
   display: flex;
   flex-flow: column;
 }
@@ -393,6 +392,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 60vw;
+  min-height: 60vh;
   overflow-x: hidden;
   overflow-y: visible;
   transition: all 0.3s ease;
@@ -641,6 +641,83 @@ body {
   height: 50px;
   width: 160px;
   background-color: #fcc719;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  min-width: 80%;
+  background-color: #ffffff;
+  margin-bottom: 10vh;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  min-height: 55vh;
+}
+.products__container__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 35vh;
+  width: 105%;
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
+  background-repeat: no-repeat;
+  background-size: 150px, cover;
+  background-position: 85% 100%, 0 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.products__container__header__title {
+  margin-left: 112px;
+  margin-bottom: 149px;
+}
+.products__container__header__title h1 {
+  font-family: "Bebas Neue", cursive;
+  line-height: 100%;
+  font-size: 53px;
+}
+.products__container__header__title h2 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 200;
+}
+.products__container__main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.products__container__main__title h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 53px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.products__container__main__title hr {
+  height: 3px;
+  border: none;
+  background-color: #fcc719;
+  margin: 0 auto 5rem;
+  width: 25vw;
+}
+.products__container__main__alfajores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.products__container__main__alfajores img {
+  max-width: 198px;
+}
+.products__container__main__alfajores span {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
