@@ -6,7 +6,12 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
    <link rel="stylesheet" href="./css/main.css">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script type="module" src="./JS/carousel.js"></script>
    <title>Alfajores Malambo</title>
 </head>
 
@@ -16,7 +21,9 @@
       <nav class="menu">
          <ul class="menu__list">
             <li class="menu__item"><a href="./pages/products.html">Products</a></li>
-            <li class="menu__item"><a href="/"><img src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670954386/menu/Logo_lkwjeo.png" alt="logo alfajores malambo"></a></li>
+            <li class="menu__item"><a href="/"><img
+                     src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670954386/menu/Logo_lkwjeo.png"
+                     alt="logo alfajores malambo"></a></li>
             <li class="menu__item"><a href="./pages/contact.html">Contacto</a></li>
          </ul>
       </nav>
@@ -37,12 +44,8 @@
                <div class="container__header__welcome__text">
                   <h1>Somos Creadores</h1>
                   <h2>De Sabores</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus consequat cursus.</p>
+                  <p>"En Malambo vas a encontrar más de 30 variedades de alfajores. Fusionamos pastelería profesional con productos naturales."</p>
                </div>
-            </div>
-            <div class="container__header__mascot">
-               <img src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"
-                  alt="gauchito">
             </div>
          </div>
 
@@ -54,34 +57,31 @@
                </div>
                <div class="container__main__variedades__menu">
                   <div class="container__main__variedades__menu__item">
-                     <button class="btn"><a href="./pages/products.html#clasicos" class="btn">Clásicos</a></button>
+                     <a class="btn" href="./pages/products.html#clasicos">Clásicos</a>
                   </div>
                   <div class="container__main__variedades__menu__item">
-                     <button class="btn"><a href="./pages/products.html#postres">Postres</a></button>
+                     <a class="btn" href="./pages/products.html#postres">Postres</a>
                   </div>
                   <div class="container__main__variedades__menu__item">
-                     <button class="btn"><a href="./pages/products.html#varietales">Varietales</a></button>
+                     <a class="btn" href="./pages/products.html#varietales">Varietales</a>
                   </div>
                   <div class="container__main__variedades__menu__item">
-                     <button class="btn"><a href="./pages/products.html#frutales">Frutales</a></button>
+                     <a class="btn" href="./pages/products.html#frutales">Frutales</a>
                   </div>
                   <div class="container__main__variedades__menu__item">
-                     <button class="btn"><a href="./pages/products.html#licores">Licores</a></button>
+                     <a class="btn" href="./pages/products.html#licores">Licores</a>
                   </div>
                </div>
             </div>
 
             <div class="container__main__roulette">
                <div class="container__main__roulette__titulo">
-                  <h3>Descubri Tu Sabor del Día</h3>
+                  <h3>Descubrí Tu Sabor del Día</h3>
                   <hr>
                </div>
-               <div class="container__main__roulette__placeholder">
-                  <img
-                     src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1671064104/products/mantecol-min_lmecwj.png"
-                     alt="ruleta">
-                  <button class="btn">¡Quiero Mi Sabor!</button>
+               <div class="container__main__roulette__placeholder" id="roulette">
                </div>
+               <p class="btn" id="roulette_btn">¡Quiero Mi Sabor!</p>
             </div>
 
             <div class="container__main__about">
@@ -122,7 +122,7 @@
             alt="logo alfajores malambo">
       </div>
       <div class="footer__contactanos">
-         <h5>Contáctanos</h5>
+         <h5>Contactános</h5>
          <ul>
             <li><a href="https://walink.co/7cb69c" target="_blank">
                   <i class="fa fa-whatsapp"></i>
