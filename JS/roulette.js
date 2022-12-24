@@ -21,13 +21,14 @@ window.addEventListener( "DOMContentLoaded", async () => {
       rand = Math.floor( Math.random() * total );
 
     $( ".container__main__roulette__placeholder" ).slick( {
+      infinite: true,
       centerMode: true,
-      slidesToShow: 3,
       pauseOnFocus: false,
       pauseOnHover: false,
       respondTo: "min",
       centerPadding: "60px",
-      slidesToScroll: 1,
+      slidesToShow: 3,       
+      cssEase: "linear",
       autoplay: true,
       autoplaySpeed: 1500,
       arrows: false,
@@ -41,7 +42,7 @@ window.addEventListener( "DOMContentLoaded", async () => {
     $( ".container__main__roulette__placeholder" ).slick(
       "slickSetOption",
       "autoplaySpeed",
-      10,
+      1,
       true
     );
 

@@ -181,6 +181,14 @@
           padding: 0 60rem !important;
         }
 
+        .slick-track,
+        .slick-list {
+          perspective: 2000;
+          -webkit-perspective: 2000;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+        }
+
         .slick-center {
           transition: all 0.5s ease-in-out !important;
           transform: scale(1.6, 1.6) !important;

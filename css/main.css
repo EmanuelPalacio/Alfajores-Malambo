@@ -69,140 +69,6 @@ body {
   color: #ffffff;
 }
 
-.faded {
-  position: relative;
-  display: inline-block;
-  color: white;
-}
-.faded:after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-collapse: separate;
-  z-index: 5;
-}
-.faded.faded-left:after {
-  box-shadow: inset 40px 0 40px -16px;
-}
-.faded.faded-right:after {
-  box-shadow: inset -40px 0 40px -16px;
-}
-.faded.faded-top:after {
-  box-shadow: inset 0 40px 40px -16px;
-}
-.faded.faded-bottom:after {
-  box-shadow: inset 0 -40px 40px -16px;
-}
-.faded.faded-left.faded-right:after {
-  box-shadow: inset 40px 0 40px -16px, inset -40px 0 40px -16px;
-}
-.faded.faded-left.faded-top:after {
-  box-shadow: inset 40px 40px 40px -16px;
-}
-.faded.faded-right.faded-bottom:after {
-  box-shadow: inset -40px -40px 40px -16px;
-}
-.faded.faded-top.faded-right:after {
-  box-shadow: inset -40px 40px 40px -16px;
-}
-.faded.faded-top.faded-bottom:after {
-  box-shadow: inset 0 40px 40px -16px, inset 0 -40px 40px -16px;
-}
-.faded.faded-left.faded-bottom:after {
-  box-shadow: inset 40px -40px 40px -16px;
-}
-.faded.faded-left.faded-top.faded-bottom:after {
-  box-shadow: inset 20px 0 40px 16px;
-}
-.faded.faded-left.faded-top.faded-right:after {
-  box-shadow: inset 0 20px 40px 16px;
-}
-.faded.faded-all:after, .faded.faded-left.faded-top.faded-right.faded-bottom:after {
-  box-shadow: inset 0 0 40px 16px;
-}
-.faded.faded-narrow.faded-left:after {
-  box-shadow: inset 20px 0 20px -10px;
-}
-.faded.faded-narrow.faded-right:after {
-  box-shadow: inset -20px 0 20px -10px;
-}
-.faded.faded-narrow.faded-top:after {
-  box-shadow: inset 0 20px 20px -10px;
-}
-.faded.faded-narrow.faded-bottom:after {
-  box-shadow: inset 0 -20px 20px -10px;
-}
-.faded.faded-narrow.faded-left.faded-right:after {
-  box-shadow: inset 20px 0 20px -10px, inset -20px 0 20px -10px;
-}
-.faded.faded-narrow.faded-left.faded-top:after {
-  box-shadow: inset 20px 20px 20px -10px;
-}
-.faded.faded-narrow.faded-right.faded-bottom:after {
-  box-shadow: inset -20px -20px 20px -10px;
-}
-.faded.faded-narrow.faded-top.faded-right:after {
-  box-shadow: inset -20px 20px 20px -10px;
-}
-.faded.faded-narrow.faded-top.faded-bottom:after {
-  box-shadow: inset 0 20px 20px -10px, inset 0 -20px 20px -10px;
-}
-.faded.faded-narrow.faded-left.faded-bottom:after {
-  box-shadow: inset 20px -20px 20px -10px;
-}
-.faded.faded-narrow.faded-left.faded-top.faded-bottom:after {
-  box-shadow: inset 10px 0 20px 10px;
-}
-.faded.faded-narrow.faded-left.faded-top.faded-right:after {
-  box-shadow: inset 0 10px 20px 10px;
-}
-.faded.faded-narrow.faded-all:after, .faded.faded-narrow.faded-left.faded-top.faded-right.faded-bottom:after {
-  box-shadow: inset 0 0 20px 10px;
-}
-.faded.faded-wide.faded-left:after {
-  box-shadow: inset 100px 0 100px 0px;
-}
-.faded.faded-wide.faded-right:after {
-  box-shadow: inset -100px 0 100px 0px;
-}
-.faded.faded-wide.faded-top:after {
-  box-shadow: inset 0 100px 100px 0px;
-}
-.faded.faded-wide.faded-bottom:after {
-  box-shadow: inset 0 -100px 100px 0px;
-}
-.faded.faded-wide.faded-left.faded-right:after {
-  box-shadow: inset 100px 0 100px 0px, inset -100px 0 100px 0px;
-}
-.faded.faded-wide.faded-left.faded-top:after {
-  box-shadow: inset 100px 100px 100px 0px;
-}
-.faded.faded-wide.faded-right.faded-bottom:after {
-  box-shadow: inset -100px -100px 100px 0px;
-}
-.faded.faded-wide.faded-top.faded-right:after {
-  box-shadow: inset -100px 100px 100px 0px;
-}
-.faded.faded-wide.faded-top.faded-bottom:after {
-  box-shadow: inset 0 100px 100px 0px, inset 0 -100px 100px 0px;
-}
-.faded.faded-wide.faded-left.faded-bottom:after {
-  box-shadow: inset 100px -100px 100px 0px;
-}
-.faded.faded-wide.faded-left.faded-top.faded-bottom:after {
-  box-shadow: inset 50px 0 100px 0px;
-}
-.faded.faded-wide.faded-left.faded-top.faded-right:after {
-  box-shadow: inset 0 50px 100px 0px;
-}
-.faded.faded-wide.faded-all:after, .faded.faded-wide.faded-left.faded-top.faded-right.faded-bottom:after {
-  box-shadow: inset 0 0 100px 0px;
-}
-
 .menu {
   display: flex;
   align-items: flex-end;
@@ -418,6 +284,13 @@ body {
   max-height: 100%;
   overflow: visible !important;
   padding: 0 60rem !important;
+}
+.container__main__roulette__placeholder .slick-track,
+.container__main__roulette__placeholder .slick-list {
+  perspective: 2000;
+  -webkit-perspective: 2000;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .container__main__roulette__placeholder .slick-center {
   transition: all 0.5s ease-in-out !important;
@@ -826,11 +699,11 @@ body {
   font-size: 3rem;
   font-weight: 200;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   z-index: 2;
 }
 .overlay .popup .close:hover {
-  color: orange;
+  color: #fcc719;
 }
 .overlay .popup .content {
   max-height: 30%;
