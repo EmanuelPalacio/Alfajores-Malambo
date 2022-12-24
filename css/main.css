@@ -247,15 +247,14 @@ body {
   margin-right: 1vw;
 }
 
-.homePage {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: "x main y";
-  min-height: 100vh;
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  grid-area: main;
+  min-width: 80%;
   display: flex;
   flex-flow: column;
 }
@@ -393,6 +392,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 60vw;
+  min-height: 60vh;
   overflow-x: hidden;
   overflow-y: visible;
   transition: all 0.3s ease;
@@ -407,6 +407,27 @@ body {
 }
 .container__main__roulette__placeholder img {
   margin: 0 10rem;
+}
+.container__main__roulette__placeholder .slick-track {
+  transition: all 0.5s ease-in-out !important;
+}
+.container__main__roulette__placeholder .slick-list {
+  transition: all 0.5s ease-in-out !important;
+  transform: scale(0.6, 0.6) !important;
+  height: 50vh;
+  max-height: 100%;
+  overflow: visible !important;
+  padding: 0 60rem !important;
+}
+.container__main__roulette__placeholder .slick-center {
+  transition: all 0.5s ease-in-out !important;
+  transform: scale(1.6, 1.6) !important;
+  overflow-y: visible !important;
+  background-image: radial-gradient(20rem at center, rgb(255, 255, 255), rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0)) !important;
+  background-size: cover;
+}
+.container__main__roulette__placeholder .slick-active {
+  transition: all 0.5s ease-in-out !important;
 }
 .container__main__roulette__placeholder .carousel__container {
   display: flex;
@@ -432,6 +453,7 @@ body {
   font-weight: 600;
   color: #1a1a1a;
   cursor: pointer;
+  text-align: center;
 }
 .container__main__roulette__placeholder .carousel__container .btn__hidden {
   display: none;
@@ -482,31 +504,6 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 2vh;
-}
-
-.slick-track {
-  transition: all 0.5s ease-in-out !important;
-}
-
-.slick-list {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(0.6, 0.6) !important;
-  height: 50vh;
-  max-height: 100%;
-  overflow: visible !important;
-  padding: 0 60rem !important;
-}
-
-.slick-center {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(1.6, 1.6) !important;
-  overflow-y: visible !important;
-  background-image: radial-gradient(20rem at center, rgb(255, 255, 255), rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0)) !important;
-  background-size: cover;
-}
-
-.slick-active {
-  transition: all 0.5s ease-in-out !important;
 }
 
 @keyframes kaboom {
@@ -641,6 +638,273 @@ body {
   height: 50px;
   width: 160px;
   background-color: #fcc719;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: #ffffff;
+  margin-bottom: 10vh;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  min-height: 55vh;
+}
+.products__container__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 35vh;
+  width: 105%;
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
+  background-repeat: no-repeat;
+  background-size: 150px, cover;
+  background-position: 85% 100%, 0 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.products__container__header__title {
+  margin-left: 112px;
+  margin-bottom: 149px;
+}
+.products__container__header__title h1 {
+  font-family: "Bebas Neue", cursive;
+  line-height: 100%;
+  font-size: 53px;
+}
+.products__container__header__title h2 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 200;
+}
+.products__container__main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+}
+.products__container__main__title h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 53px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.products__container__main__title hr {
+  height: 3px;
+  border: none;
+  background-color: #fcc719;
+  margin: 0 auto 5rem;
+  width: 25vw;
+}
+.products__container__main__alfajores {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: 10vh;
+}
+.products__container__main__alfajores .alfajor__container {
+  display: flex;
+  flex-direction: column;
+}
+.products__container__main__alfajores .alfajor__container img {
+  max-width: 198px;
+}
+.products__container__main__alfajores .alfajor__container .product__title,
+.products__container__main__alfajores .alfajor__container .product__desc {
+  display: none;
+}
+
+#clasicos {
+  min-height: 470px;
+}
+
+#postres {
+  min-height: 710px;
+}
+
+#varietales {
+  min-height: 230px;
+}
+
+#frutales {
+  min-height: 445px;
+}
+
+#licores {
+  min-height: 450px;
+}
+
+.slider__container {
+  width: 80vw;
+  overflow-x: hidden;
+}
+.slider__container__header {
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px 10px 0px 0px;
+  padding-right: 25vw;
+}
+.slider__container__header h1 {
+  font-family: "Bebas Neue", cursive;
+  line-height: 100%;
+  font-size: 53px;
+  color: #ffffff;
+  font-weight: 100;
+  margin: 5vh auto 1vh;
+}
+.slider__container__header hr {
+  height: 3px;
+  border: none;
+  background-color: #fcc719;
+  margin: 0 auto 3rem;
+  width: 25vw;
+}
+.slider__container__main {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 2vh 5vw;
+  border-radius: 0px 0px 10px 10px;
+}
+.slider__container__main img {
+  max-width: 280px;
+  margin: 5vh;
+}
+.slider__container__main p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.slider__container__main__warn {
+  color: #916d2a;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  transition: visibility 0ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+}
+.overlay .popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  width: 60vw;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.overlay .popup .close {
+  position: absolute;
+  top: 8vh;
+  right: 4vw;
+  transition: all 200ms;
+  font-size: 3rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+.overlay .popup .close:hover {
+  color: orange;
+}
+.overlay .popup .content {
+  max-height: 30%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.overlay .popup .content .slick-next {
+  right: 30px !important;
+}
+.overlay .popup .content .slick-next:before {
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671836132/slider/right_arrow_wpkiah.svg") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+.overlay .popup .content .slick-prev {
+  left: 30px !important;
+}
+.overlay .popup .content .slick-prev::before {
+  background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671836132/slider/left_arrow_nyzvqc.svg") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+.overlay .popup .content .slick-arrow {
+  z-index: 2 !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+.overlay .popup .content .slick-arrow:before {
+  content: "" !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1 !important;
+}
+.overlay .popup .content .slick-dots {
+  position: absolute;
+  left: 50%;
+  display: inline-flex;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.overlay .popup .content .slick-dots li {
+  visibility: hidden;
+  width: 12px !important;
+  margin: 0 3px !important;
+  bottom: 5vh !important;
+}
+.overlay .popup .content .slick-dots button {
+  display: block;
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  border: none !important;
+  border-radius: 100% !important;
+  background-color: #916d2a !important;
+  text-indent: -9999px !important;
+}
+.overlay .popup .content .slick-dots li.slick-active button {
+  visibility: visible;
+  display: block;
+  background-color: #fcc719 !important;
+  width: 0.7rem !important;
+  height: 0.7rem !important;
+  margin-top: -2px !important;
+}
+.overlay .popup .content .slick-dots li.slick-secondary button {
+  visibility: visible;
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+  margin-top: -0.75px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

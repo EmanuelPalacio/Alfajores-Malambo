@@ -18,26 +18,32 @@ $txSecondary: #ffffff;
   list-style: none;
   text-decoration: none;
 }
+
 a {
   color: $txSecondary;
+
   &:link,
   &:visited {
     color: $txSecondary;
   }
+
   &:hover {
     color: $tertiary;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 .btn a {
   color: $txPrimary;
+
   &:link,
   &:visited {
     color: $txPrimary;
   }
+
   &:hover {
     color: $txSecondary;
   }
@@ -70,6 +76,7 @@ body {
   text-align: center;
   font-size: 40px;
   z-index: 99;
+
   &:hover {
     color: $txSecondary;
   }
@@ -77,9 +84,11 @@ body {
 
 .my-float {
   transition: all 0.3s;
+
   &:hover {
     transform: scale(120%);
   }
+
   &:active {
     color: $txSecondary;
   }

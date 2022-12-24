@@ -1,12 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+   <link rel="stylesheet" href="../css/main.css">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script type="module" src="../JS/products.js"></script>
+   <script type="module" src="../JS/slider.js"></script>
+   <title>Alfajores Malambo</title>
 </head>
+
 <body>
-  
+   <header>
+      <nav class="menu">
+         <ul class="menu__list">
+            <li class="menu__item"><a href="./products.html">Products</a></li>
+            <li class="menu__item"><a href="/"><img
+                     src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670954386/menu/Logo_lkwjeo.png"
+                     alt="logo alfajores malambo"></a></li>
+            <li class="menu__item"><a href="./contact.html">Contacto</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main class="products">
+      <section class="products__container">
+         <div class="products__container__header">
+            <div class="products__container__header__title">
+               <h1>EXPLORA NUESTRA</h1>
+               <h2>GRAN VARIEDAD DE SABORES</h2>
+            </div>
+         </div>
+         <div class="products__container__main">
+
+            <div class="products__container__main__title">
+               <h3 id="clasicos-title">Clásicos</h3>
+               <hr>
+            </div>
+            <div class="products__container__main__alfajores" id="clasicos">
+
+            </div>
+
+            <div class="products__container__main__title">
+               <h3 id="postres-title">Postres</h3>
+               <hr>
+            </div>
+            <div class="products__container__main__alfajores" id="postres">
+
+            </div>
+
+            <div class="products__container__main__title">
+               <h3  id="varietales-title">Varietales</h3>
+               <hr>
+            </div>
+            <div class="products__container__main__alfajores" id="varietales">
+
+            </div>
+
+            <div class="products__container__main__title">
+               <h3 id="frutales-title" >Frutales</h3>
+               <hr>
+            </div>
+            <div class="products__container__main__alfajores" id="frutales">
+
+            </div>
+
+            <div class="products__container__main__title">
+               <h3 id="licores-title">Licores</h3>
+               <hr>
+            </div>
+            <div class="products__container__main__alfajores" id="licores">
+
+            </div>
+         </div>
+
+         <div id="popup1" class="overlay">
+            <div class="popup">
+               <a class="close" id="close" href="#">×</a>-->
+               <div class="content">
+                  <div id="slider">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="container__whatsappbtn">
+            <a href="https://walink.co/7cb69c" class="float" target="_blank">
+               <i class="fa fa-whatsapp my-float"></i>
+            </a>
+         </div>
+
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <div class="footer__logo">
+         <img src="https://res.cloudinary.com/dgf6hvqia/image/upload/v1670954386/menu/Logo_lkwjeo.png"
+            alt="logo alfajores malambo">
+      </div>
+      <div class="footer__contactanos">
+         <h5>Contactános</h5>
+         <ul>
+            <li><a href="https://walink.co/7cb69c" target="_blank">
+                  <i class="fa fa-whatsapp"></i>
+                  261 710-6629</a>
+            </li>
+            <li><a href="mailto:alfajores.malambo.web@gmail.com
+           " target="_blank">
+                  <i class="fa fa-envelope"></i>
+                  alfajores.malambo.web@gmail.com
+               </a>
+            </li>
+            <li><a href="https://goo.gl/maps/FGgqBFWRYmB1KmdN9" target="_blank">
+                  <i class="fa fa-map-marker"></i>
+                  Av. Siempreviva 742, Mendoza
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer_seguinos">
+         <h5>¡Seguinos!</h5>
+         <ul>
+            <li>
+               <a href="https://www.instagram.com/alfajoresmalambo/" target="_blank">
+                  <i class="fa fa-instagram"></i>
+                  alfajoresmalambo
+               </a>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
 </body>
+
 </html>

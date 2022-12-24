@@ -1,12 +1,11 @@
-.homePage {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: "x main y";
-  min-height: 100vh;
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  grid-area: main;
+  min-width: 80%;
   display: flex;
   flex-flow: column;
 
@@ -100,33 +99,23 @@
       margin-bottom: 15vh;
 
       &__item:nth-child(1) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg"));
       }
 
       &__item:nth-child(2) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg"));
       }
 
       &__item:nth-child(3) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg"));
       }
 
       &__item:nth-child(4) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg"));
       }
 
       &__item:nth-child(5) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg"));
       }
 
       &__item {
@@ -158,16 +147,15 @@
         align-items: center;
         width: 100%;
         max-width: 60vw;
+        min-height: 60vh;
         overflow-x: hidden;
         overflow-y: visible;
         transition: all 0.3s ease;
         mask-image: (to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
           linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        -webkit-mask-image: linear-gradient(
-            to left,
+        -webkit-mask-image: linear-gradient(to left,
             rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0)
-          ),
+            rgba(0, 0, 0, 0)),
           linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         mask-size: 50.2% 180%;
         -webkit-mask-size: 50.2% 180%;
@@ -180,6 +168,34 @@
           margin: 0 10rem;
         }
 
+        .slick-track {
+          transition: all 0.5s ease-in-out !important;
+        }
+
+        .slick-list {
+          transition: all 0.5s ease-in-out !important;
+          transform: scale(0.6, 0.6) !important;
+          height: 50vh;
+          max-height: 100%;
+          overflow: visible !important;
+          padding: 0 60rem !important;
+        }
+
+        .slick-center {
+          transition: all 0.5s ease-in-out !important;
+          transform: scale(1.6, 1.6) !important;
+          overflow-y: visible !important;
+          background-image: radial-gradient(20rem at center,
+              rgb(255, 255, 255),
+              rgba(255, 255, 255, 0.801),
+              rgba(255, 255, 255, 0)) !important;
+          background-size: cover;
+        }
+
+        .slick-active {
+          transition: all 0.5s ease-in-out !important;
+        }
+
         .carousel__container {
           display: flex;
           flex-flow: column wrap;
@@ -189,6 +205,7 @@
           .btn__flavor {
             @include buttons(226px, 55px);
             cursor: pointer;
+            text-align: center;
           }
 
           .btn__hidden {
@@ -238,49 +255,23 @@
   }
 }
 
-.slick-track {
-  transition: all 0.5s ease-in-out !important;
-}
-
-.slick-list {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(0.6, 0.6) !important;
-  height: 50vh;
-  max-height: 100%;
-  overflow: visible !important;
-  padding: 0 60rem !important;
-}
-
-.slick-center {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(1.6, 1.6) !important;
-  overflow-y: visible !important;
-  background-image: radial-gradient(
-    20rem at center,
-    rgb(255, 255, 255),
-    rgba(255, 255, 255, 0.801),
-    rgba(255, 255, 255, 0)
-  ) !important;
-  background-size: cover;
-}
-
-.slick-active {
-  transition: all 0.5s ease-in-out !important;
-}
-
 @keyframes kaboom {
   0% {
     background-size: 0px, cover;
   }
+
   25% {
     background-size: 600px, cover;
   }
+
   50% {
     background-size: 0px, cover;
   }
+
   75% {
     background-size: 600px, cover;
   }
+
   100% {
     background-size: 0px, cover;
   }
