@@ -14,6 +14,7 @@
     border-radius: 30px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     min-height: 55vh;
+
     &__header {
       display: flex;
       justify-content: start;
@@ -30,6 +31,7 @@
       &__title {
         margin-left: 112px;
         margin-bottom: 149px;
+
         h1 {
           font-family: "Bebas Neue", cursive;
           line-height: 100%;
@@ -44,6 +46,7 @@
         }
       }
     }
+
     &__main {
       display: flex;
       flex-direction: column;
@@ -75,6 +78,7 @@
         align-items: center;
         gap: 2vw;
         margin-bottom: 10vh;
+
         .alfajor__container {
           display: flex;
           flex-direction: column;
@@ -82,6 +86,7 @@
           img {
             max-width: 198px;
           }
+
           .product__title,
           .product__desc {
             display: none;
@@ -92,3 +97,22 @@
   }
 }
 
+#clasicos {
+  min-height: 470px;
+}
+
+#postres {
+  min-height: 710px;
+}
+
+#varietales {
+  min-height: 230px;
+}
+
+#frutales {
+  min-height: 445px;
+}
+
+#licores {
+  min-height: 450px;
+}

@@ -1,15 +1,14 @@
 .slider__container {
   width: 80vw;
   overflow-x: hidden;
+
   &__header {
     display: flex;
     flex-direction: column;
     max-height: 20vh;
-    background: linear-gradient(
-        180deg,
+    background: linear-gradient(180deg,
         rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      ),
+        rgba(0, 0, 0, 0.5) 100%),
       url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px 10px 0px 0px;
@@ -23,6 +22,7 @@
       font-weight: 100;
       margin: 5vh auto 1vh;
     }
+
     hr {
       height: 3px;
       border: none;
@@ -31,6 +31,7 @@
       width: 25vw;
     }
   }
+
   &__main {
     min-height: 50vh;
     display: flex;
@@ -40,14 +41,17 @@
     background-color: $primary;
     padding: 2vh 5vw;
     border-radius: 0px 0px 10px 10px;
+
     img {
       max-width: 280px;
       margin: 5vh;
     }
+
     p {
       font-size: 20px;
       font-weight: 400;
     }
+
     &__warn {
       color: $quaternary;
       font-size: 15px;
@@ -68,6 +72,7 @@
   visibility: hidden;
   opacity: 0;
   z-index: 100;
+
   .popup {
     margin: 70px auto;
     padding: 20px;
@@ -76,6 +81,7 @@
     width: 60vw;
     position: relative;
     transition: all 0.5s ease-in-out;
+
     .close {
       position: absolute;
       top: 8vh;
@@ -84,48 +90,55 @@
       font-size: 3rem;
       font-weight: 200;
       text-decoration: none;
-      color: rgb(255, 255, 255);
+      color: $txPrimary;
       z-index: 2;
+
       &:hover {
-        color: orange;
+        color: $tertiary;
       }
     }
+
     .content {
       max-height: 30%;
       overflow: hidden;
       margin: 0 auto;
+
       .slick-next {
         right: 30px !important;
+
         &:before {
           background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671836132/slider/right_arrow_wpkiah.svg") !important;
           background-size: contain !important;
           background-repeat: no-repeat !important;
         }
       }
+
       .slick-prev {
         left: 30px !important;
+
         &::before {
           background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671836132/slider/left_arrow_nyzvqc.svg") !important;
           background-size: contain !important;
           background-repeat: no-repeat !important;
         }
       }
-      
+
       .slick-arrow {
         z-index: 2 !important;
         width: 60px !important;
         height: 60px !important;
-       &:before {
-        content: "" !important;
-        width: 100% !important;
-        height: 100% !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 1 !important;
-       }
+
+        &:before {
+          content: "" !important;
+          width: 100% !important;
+          height: 100% !important;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 1 !important;
+        }
       }
-      
+
       .slick-dots {
         position: absolute;
         left: 50%;
@@ -133,12 +146,14 @@
         margin: 0;
         padding: 1rem 0;
         list-style-type: none;
+
         li {
           visibility: hidden;
-        width: 12px !important;
-        margin: 0 3px !important;
-        bottom: 5vh !important;
+          width: 12px !important;
+          margin: 0 3px !important;
+          bottom: 5vh !important;
         }
+
         button {
           display: block;
           width: 0.5rem !important;
@@ -151,7 +166,7 @@
           text-indent: -9999px !important;
         }
       }
-      
+
       .slick-dots li.slick-active button {
         visibility: visible;
         display: block;
@@ -160,7 +175,7 @@
         height: 0.7rem !important;
         margin-top: -2px !important;
       }
-      
+
       .slick-dots li.slick-secondary button {
         visibility: visible;
         width: 0.6rem !important;
@@ -170,5 +185,3 @@
     }
   }
 }
-
-

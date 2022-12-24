@@ -724,6 +724,26 @@ body {
   display: none;
 }
 
+#clasicos {
+  min-height: 470px;
+}
+
+#postres {
+  min-height: 710px;
+}
+
+#varietales {
+  min-height: 230px;
+}
+
+#frutales {
+  min-height: 445px;
+}
+
+#licores {
+  min-height: 450px;
+}
+
 .slider__container {
   width: 80vw;
   overflow-x: hidden;

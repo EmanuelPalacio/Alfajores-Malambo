@@ -13,17 +13,16 @@ window.addEventListener( "DOMContentLoaded", async () => {
       const container = document.getElementById( string );
       let slide = position;
       array.forEach( ( product ) => {
-         const slideId = slide++
+         const slideId = slide++;
          const div = document.createElement( "div" );
          div.classList.add( "alfajor__container" );
-         div.setAttribute( 'id', `${product.name}` )
+         div.setAttribute( "id", `${product.name}` );
          div.innerHTML = `
-                           <a href="#" class="slider__opener" id="${slideId}">
-                        <img src="${product.img}" alt="${product.name}">
-                                           </a>  `;
+                        <a href="#" class="slider__opener" id="${slideId}">
+                        <img src="${product.img}" alt="${product.name}"></a>
+                     `;
          container.appendChild( div );
       } );
-
    };
 
    const clasicos = filter( "clasicos" );
@@ -32,9 +31,9 @@ window.addEventListener( "DOMContentLoaded", async () => {
    const frutales = filter( "frutales" );
    const licores = filter( "licores" );
 
-   append( clasicos, 'clasicos', 0 );
-   append( postres, 'postres', clasicos.length );
-   append( varietales, 'varietales', postres.length+clasicos.length );
-   append( frutales, 'frutales', postres.length+clasicos.length+varietales.length );
-   append( licores, 'licores', frutales.length+postres.length+clasicos.length+varietales.length);
+   append( clasicos, "clasicos", 0 );
+   append( postres, "postres", clasicos.length );
+   append( varietales, "varietales", postres.length + clasicos.length );
+   append( frutales, "frutales", postres.length + clasicos.length + varietales.length );
+   append( licores, "licores", frutales.length + postres.length + clasicos.length + varietales.length );
 } );
