@@ -4,12 +4,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   const data = "../data/products.json";
   const products = await getData(data);
   const container = document.getElementById("roulette");
+  let slide = 0;
 
   products.forEach((product) => {
+    const slideId = slide++
     const div = document.createElement("div");
     div.classList.add("carousel__container");
     div.innerHTML = `<img class='carousel__container__alfajor' src=${product.img} alt=${product.name}>
-                      <a class='btn__hidden btn__flavor' href='../pages/products.html#${product.name}'>${product.name}</a>
+                      <a class='btn__hidden btn__flavor slider__opener' href='#' id=${slideId}>${product.name}</a>
                    `;
     container.appendChild(div);
   });

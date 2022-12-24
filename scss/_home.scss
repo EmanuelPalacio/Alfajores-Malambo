@@ -179,7 +179,37 @@
         img {
           margin: 0 10rem;
         }
-
+        
+        .slick-track {
+          transition: all 0.5s ease-in-out !important;
+        }
+        
+        .slick-list {
+          transition: all 0.5s ease-in-out !important;
+          transform: scale(0.6, 0.6) !important;
+          height: 50vh;
+          max-height: 100%;
+          overflow: visible !important;
+          padding: 0 60rem !important;
+        }
+        
+        .slick-center {
+          transition: all 0.5s ease-in-out !important;
+          transform: scale(1.6, 1.6) !important;
+          overflow-y: visible !important;
+          background-image: radial-gradient(
+            20rem at center,
+            rgb(255, 255, 255),
+            rgba(255, 255, 255, 0.801),
+            rgba(255, 255, 255, 0)
+          ) !important;
+          background-size: cover;
+        }
+        
+        .slick-active {
+          transition: all 0.5s ease-in-out !important;
+        }
+        
         .carousel__container {
           display: flex;
           flex-flow: column wrap;
@@ -189,6 +219,7 @@
           .btn__flavor {
             @include buttons(226px, 55px);
             cursor: pointer;
+            text-align: center;
           }
 
           .btn__hidden {
@@ -236,37 +267,9 @@
       }
     }
   }
+  
 }
 
-.slick-track {
-  transition: all 0.5s ease-in-out !important;
-}
-
-.slick-list {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(0.6, 0.6) !important;
-  height: 50vh;
-  max-height: 100%;
-  overflow: visible !important;
-  padding: 0 60rem !important;
-}
-
-.slick-center {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(1.6, 1.6) !important;
-  overflow-y: visible !important;
-  background-image: radial-gradient(
-    20rem at center,
-    rgb(255, 255, 255),
-    rgba(255, 255, 255, 0.801),
-    rgba(255, 255, 255, 0)
-  ) !important;
-  background-size: cover;
-}
-
-.slick-active {
-  transition: all 0.5s ease-in-out !important;
-}
 
 @keyframes kaboom {
   0% {

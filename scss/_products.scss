@@ -8,7 +8,7 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    min-width: 80%;
+    width: 80%;
     background-color: $primary;
     margin-bottom: 10vh;
     border-radius: 30px;
@@ -49,6 +49,8 @@
       flex-direction: column;
       align-content: center;
       justify-content: center;
+      padding: 5vh 5vw;
+
       &__title {
         h3 {
           font-family: "Bebas Neue", cursive;
@@ -65,19 +67,28 @@
           width: 25vw;
         }
       }
+
       &__alfajores {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-gap: 2vw;
-         justify-content: center;
-         align-items: center;
-         img {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        margin-bottom: 10vh;
+        .alfajor__container {
+          display: flex;
+          flex-direction: column;
+
+          img {
             max-width: 198px;
-         }
-         span {
+          }
+          .product__title,
+          .product__desc {
             display: none;
-         }
+          }
+        }
       }
     }
   }
 }
+

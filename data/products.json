@@ -56,48 +56,6 @@
     "disp": 0
   },
   {
-    "name": "Arándanos",
-    "cat": "frutales",
-    "desc": "Alfajor relleno de dulce de leche y arándanos enteros, con baño de chocolate semiamargo.",
-    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/arandanos_1_awk5k5.png",
-    "disp": 0
-  },
-  {
-    "name": "Fresas Blanco",
-    "cat": "frutales",
-    "desc": "Alfajor relleno de pulpa de fresa, con baño de chocolate blanco.",
-    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623533/products/fresas2_1_lyw4mp.png",
-    "disp": 0
-  },
-  {
-    "name": "Fresas Negro",
-    "cat": "frutales",
-    "desc": "Alfajor relleno de pulpa de fresa, con baño de chocolate semiamargo.",
-    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623530/products/fresas_1_wvoxhe.png",
-    "disp": 0
-  },
-  {
-    "name": "Frutos del Bosque",
-    "cat": "frutales",
-    "desc": "Alfajor relleno de pulpa de frutos del bosque, con baño de chocolate semiamargo.",
-    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623531/products/frutosdelbosque_1_hnuj0q.png",
-    "disp": 0
-  },
-  {
-    "name": "Naranja",
-    "cat": "frutales",
-    "desc": "Alfajor relleno de chocolate con naranjas, con baño de chocolate semiamargo.",
-    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623534/products/naranja_n2c4qh.png",
-    "disp": 0
-  },
-  {
-    "name": "Uvas",
-    "cat": "frutales",
-    "desc": "Alfajor relleno de dulce de leche y jugo de uvas, con baño de chocolate semiamargo.",
-    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623539/products/uvas_febumi.png",
-    "disp": 0
-  },
-  {
     "name": "Almendrado",
     "cat": "postres",
     "desc": "Alfajor relleno de pasta de almendras, con baño de chocolate blanco.",
@@ -196,8 +154,50 @@
     "disp": 0
   },
   {
+    "name": "Arándanos",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de dulce de leche y arándanos enteros, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/arandanos_1_awk5k5.png",
+    "disp": 0
+  },
+  {
+    "name": "Fresas Blanco",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de pulpa de fresa, con baño de chocolate blanco.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623533/products/fresas2_1_lyw4mp.png",
+    "disp": 0
+  },
+  {
+    "name": "Fresas Negro",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de pulpa de fresa, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623530/products/fresas_1_wvoxhe.png",
+    "disp": 0
+  },
+  {
+    "name": "Frutos del Bosque",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de pulpa de frutos del bosque, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623531/products/frutosdelbosque_1_hnuj0q.png",
+    "disp": 0
+  },
+  {
+    "name": "Naranja",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de chocolate con naranjas, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623534/products/naranja_n2c4qh.png",
+    "disp": 0
+  },
+  {
+    "name": "Uvas",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de dulce de leche y jugo de uvas, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623539/products/uvas_febumi.png",
+    "disp": 0
+  },
+  {
     "name": "Fernet",
-    "cat": "varietales",
+    "cat": "licores",
     "desc": "Alfajor relleno de chocolate y Fernet, con baño de chocolate semiamargo.",
     "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623531/products/fernet_1_jej1or.png",
     "disp": 0
