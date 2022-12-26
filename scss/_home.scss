@@ -1,20 +1,22 @@
-.homePage {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: "x main y";
-  min-height: 100vh;
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  grid-area: main;
+  min-width: 80%;
   display: flex;
   flex-flow: column;
+
   &__header {
     display: flex;
     flex-flow: column;
-    background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671049867/menu/BannerFondo_phauic_izecml.svg");
+    background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"),
+      url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
     background-repeat: no-repeat;
-    background-size: 84vw;
+    background-size: 210px, cover;
+    background-position: 85% 100%, 0 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-left: -2vh;
     padding-left: 2vw;
@@ -29,43 +31,36 @@
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
+
       &__image {
         margin: 0 5vw;
         max-width: 30vw;
+
         img {
           width: 100%;
         }
       }
+
       &__text {
         max-width: 20vw;
+
         h1 {
           font-family: "Bebas Neue", cursive;
-          line-height: 70%;
+          line-height: 100%;
           font-size: 53px;
         }
+
         h2 {
           font-family: "Inter", sans-serif;
           text-transform: uppercase;
           font-size: 32px;
           font-weight: 200;
         }
+
         p {
           margin-top: 1rem;
           font-size: 22px;
         }
-      }
-    }
-    &__mascot {
-      position: relative;
-      bottom: 15vh;
-      right: 15vw;
-      align-self: flex-end;
-      transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      overflow: visible;
-      img {
-        max-width: 10rem;
       }
     }
   }
@@ -81,12 +76,14 @@
     border-radius: 30px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     z-index: 1;
+
     h3 {
       font-family: "Bebas Neue", cursive;
       font-size: 53px;
       letter-spacing: 0.03em;
       text-align: center;
     }
+
     hr {
       height: 3px;
       border: none;
@@ -94,76 +91,168 @@
       margin: 0 auto 5rem;
       width: 25vw;
     }
+
     &__variedades__menu {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 14px;
       margin-bottom: 15vh;
+
       &__item:nth-child(1) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg"));
       }
+
       &__item:nth-child(2) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg"));
       }
+
       &__item:nth-child(3) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg"));
       }
+
       &__item:nth-child(4) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg"));
       }
+
       &__item:nth-child(5) {
-        @include overlay(
-          url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg")
-        );
+        @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg"));
       }
+
       &__item {
         display: flex;
         align-items: flex-end;
         justify-content: center;
         width: 216px;
         height: 169px;
-        button {
+
+        .btn {
           position: relative;
           top: 4vh;
-          @include buttons(171px, 55px)  
+          @include buttons(171px, 55px);
         }
       }
     }
+
     &__roulette {
       display: flex;
       flex-flow: column;
       justify-content: center;
       margin-bottom: 15vh;
-    &__placeholder {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
       align-items: center;
-      button {
-        @include buttons(226px, 55px)  
+
+      &__placeholder {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 60vw;
+        min-height: 60vh;
+        overflow-x: hidden;
+        overflow-y: visible;
+        transition: all 0.3s ease;
+        mask-image: (to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+          linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to left,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)),
+          linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-size: 50.2% 180%;
+        -webkit-mask-size: 50.2% 180%;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: left, right;
+        -webkit-mask-position: left, right;
+
+        img {
+          margin: 0 10rem;
+        }
+
+        .slick-track {
+          transition: all 0.5s ease-in-out !important;
+        }
+
+        .slick-list {
+          transition: all 0.5s ease-in-out !important;
+          transform: scale(0.6, 0.6) !important;
+          height: 50vh;
+          max-height: 100%;
+          overflow: visible !important;
+          padding: 0 60rem !important;
+        }
+
+        .slick-track,
+        .slick-list {
+          perspective: 2000;
+          -webkit-perspective: 2000;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+        }
+
+        .slick-center {
+          transition: all 0.5s ease-in-out !important;
+          transform: scale(1.6, 1.6) !important;
+          overflow-y: visible !important;
+          background-image: radial-gradient(20rem at center,
+              rgb(255, 255, 255),
+              rgba(255, 255, 255, 0.801),
+              rgba(255, 255, 255, 0)) !important;
+          background-size: cover;
+        }
+
+        .slick-active {
+          transition: all 0.5s ease-in-out !important;
+        }
+
+        .carousel__container {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          justify-content: center;
+
+          .btn__flavor {
+            @include buttons(226px, 55px);
+            cursor: pointer;
+            text-align: center;
+          }
+
+          .btn__hidden {
+            display: none;
+          }
+        }
+      }
+
+      .btn {
+        @include buttons(226px, 55px);
+        position: inherit;
+        top: auto;
+        cursor: pointer;
+      }
+
+      .link {
+        color: $quaternary;
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
-    }
-    &__about{
+
+    &__about {
       display: flex;
       flex-flow: row;
-      gap: 18vw;
+      align-items: center;
       margin-bottom: 10vh;
+      max-width: 80vw;
+
       &__text {
-        width: 464px;
+        max-width: 30vw;
         text-align: justify;
-        h3{
+        margin-right: 10vw;
+
+        h3 {
           text-align: left;
           line-height: 70%;
         }
+
         h4 {
           font-size: 24px;
           text-transform: uppercase;
@@ -172,4 +261,36 @@
       }
     }
   }
+}
+
+@keyframes kaboom {
+  0% {
+    background-size: 0px, cover;
+  }
+
+  25% {
+    background-size: 600px, cover;
+  }
+
+  50% {
+    background-size: 0px, cover;
+  }
+
+  75% {
+    background-size: 600px, cover;
+  }
+
+  100% {
+    background-size: 0px, cover;
+  }
+}
+
+.fireworks {
+  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671716661/home/Animaci%C3%B3n_xgnbtz.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  animation: kaboom 1s;
+  animation-iteration-count: 3;
+  transition: all 0.3s ease-in-out;
+  background-size: 0;
 }

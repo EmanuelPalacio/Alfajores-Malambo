@@ -1,19 +1,23 @@
 @mixin overlay($bg) {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%),
-    $bg;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%),
+        $bg;
 }
 
 @mixin buttons($wt, $ht) {
-   position: relative;
-   top: 4vh;
-   width: $wt;
-   height: $ht;
-   background-color: $tertiary;
-   border: none;
-   border-radius: 0 26px;
-   font-family: "Inter", sans-serif;
-   text-transform: uppercase;
-   font-size: 20px;
-   font-weight: 600;
-   color: $secondary;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: 4vh;
+    width: $wt;
+    height: $ht;
+    background-color: $tertiary;
+    border: none;
+    border-radius: 0 26px;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: $secondary;
 }

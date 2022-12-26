@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Negro",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de dulce de leche, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623535/products/negro_1_xwv1ob.png",
+    "disp": 0
+  },
+  {
+    "name": "Blanco",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de dulce de leche, con baño de chocolate blanco.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/blanco_ffqutq.png",
+    "disp": 0
+  },
+  {
+    "name": "Dulce de Leche Granizado",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de dulce de leche y chocolate, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623529/products/ddlgranizado_1_poiuur.png",
+    "disp": 0
+  },
+  {
+    "name": "Chocolate Bariloche",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de crema Bariloche, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623528/products/chocolatebariloche_b3dzrk.png",
+    "disp": 0
+  },
+  {
+    "name": "Capuccino",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de crema Bariloche, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623529/products/capuccino_1_k8o4pc.png",
+    "disp": 0
+  },
+  {
+    "name": "Mate",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de dulce de leche y yerba mate, con baño de chocolate blanco.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/amte_el23sf.png",
+    "disp": 1
+  },
+  {
+    "name": "Menta Granizada",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de crema de menta granizada, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623534/products/mentagranizada_1_xf4fli.png",
+    "disp": 0
+  },
+  {
+    "name": "Butter Toffee",
+    "cat": "clasicos",
+    "desc": "Alfajor relleno de dulce de leche, chocolate y leche, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623539/products/toffees_d032by.png",
+    "disp": 0
+  },
+  {
+    "name": "Almendrado",
+    "cat": "postres",
+    "desc": "Alfajor relleno de pasta de almendras, con baño de chocolate blanco.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/almendrado_1_q6xncj.png",
+    "disp": 1
+  },
+  {
+    "name": "Flan con Caramelo",
+    "cat": "postres",
+    "desc": "Alfajor relleno de crema de vainilla y caramelo, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623529/products/flanconcrema_kayslp.png",
+    "disp": 0
+  },
+  {
+    "name": "Crock",
+    "cat": "postres",
+    "desc": "Alfajor relleno de super dulce de leche y maní, con baño de chocolate con leche con maní.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623528/products/crock_1_qs0oqg.png",
+    "disp": 0
+  },
+  {
+    "name": "Chocotorta",
+    "cat": "postres",
+    "desc": "Alfajor relleno de dulce de leche y pasta de chocotorta, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623528/products/chocotorta_1_rkdawb.png",
+    "disp": 0
+  },
+  {
+    "name": "Tiramisú",
+    "cat": "postres",
+    "desc": "Alfajor relleno de crema de café con vainilla, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623539/products/tiramisu_mrzhda.png",
+    "disp": 0
+  },
+  {
+    "name": "Rogel",
+    "cat": "postres",
+    "desc": "Alfajor tres tapas relleno de dulce de leche, con baño de merengue.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623536/products/rogel_lccmfm.png",
+    "disp": 0
+  },
+  {
+    "name": "Lemon Pie",
+    "cat": "postres",
+    "desc": "Alfajor relleno de crema de limón, con baño de merengue.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623531/products/lemonpie_1_k6pjyo.png",
+    "disp": 1
+  },
+  {
+    "name": "Mousse de Chocolate",
+    "cat": "postres",
+    "desc": "Alfajor relleno de mousse de chocolate, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623535/products/mussedechocolate_mvzlm3.png",
+    "disp": 0
+  },
+  {
+    "name": "Bombón Suizo",
+    "cat": "postres",
+    "desc": "Alfajor relleno de crema y dulce de leche, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/bombonsuizo_1_bpltmg.png",
+    "disp": 0
+  },
+  {
+    "name": "Turrón Alemán",
+    "cat": "postres",
+    "desc": "Alfajor tres tapas relleno de avena, cacao y dulce de leche, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623539/products/turronaleman_1_bplk8h.png",
+    "disp": 0
+  },
+  {
+    "name": "Marroc",
+    "cat": "postres",
+    "desc": "Alfajor relleno de pasta Marroc, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623532/products/marroc_1_rviecy.png",
+    "disp": 1
+  },
+  {
+    "name": "Mantecol",
+    "cat": "postres",
+    "desc": "Alfajor relleno de pasta de maní, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623532/products/mantecol_1_gnsk3n.png",
+    "disp": 1
+  },
+  {
+    "name": "Malbec",
+    "cat": "varietales",
+    "desc": "Alfajor relleno de chocolate y vino Malbec, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671661772/products/malbec_p2p8jl.png",
+    "disp": 0
+  },
+  {
+    "name": "Torrontes",
+    "cat": "varietales",
+    "desc": "Alfajor relleno de chocolate y vino Torrontes, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623538/products/torrontes_jfyzuk.png",
+    "disp": 0
+  },
+  {
+    "name": "Arándanos",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de dulce de leche y arándanos enteros, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623527/products/arandanos_1_awk5k5.png",
+    "disp": 0
+  },
+  {
+    "name": "Fresas Blanco",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de pulpa de fresa, con baño de chocolate blanco.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623533/products/fresas2_1_lyw4mp.png",
+    "disp": 0
+  },
+  {
+    "name": "Fresas Negro",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de pulpa de fresa, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623530/products/fresas_1_wvoxhe.png",
+    "disp": 0
+  },
+  {
+    "name": "Frutos del Bosque",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de pulpa de frutos del bosque, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623531/products/frutosdelbosque_1_hnuj0q.png",
+    "disp": 0
+  },
+  {
+    "name": "Naranja",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de chocolate con naranjas, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623534/products/naranja_n2c4qh.png",
+    "disp": 0
+  },
+  {
+    "name": "Uvas",
+    "cat": "frutales",
+    "desc": "Alfajor relleno de dulce de leche y jugo de uvas, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623539/products/uvas_febumi.png",
+    "disp": 0
+  },
+  {
+    "name": "Fernet",
+    "cat": "licores",
+    "desc": "Alfajor relleno de chocolate y Fernet, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623531/products/fernet_1_jej1or.png",
+    "disp": 0
+  },
+  {
+    "name": "Malbec Intenso",
+    "cat": "licores",
+    "desc": "Alfajor relleno de licor Malbec, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623534/products/malbecintenso_1_znuhz4.png",
+    "disp": 0
+  },
+  {
+    "name": "Frutilla al Whisky",
+    "cat": "licores",
+    "desc": "Alfajor relleno de dulce de leche, frutillas y whisky, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623530/products/frutillaalwhisky_1_pxfkhi.png",
+    "disp": 0
+  },
+  {
+    "name": "Pasas al Ron",
+    "cat": "licores",
+    "desc": "Alfajor relleno de chocolate, pasas de uva y ron, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623536/products/pasasalron_1_hlycs0.png",
+    "disp": 0
+  },
+  {
+    "name": "Kinotos al Whisky",
+    "cat": "licores",
+    "desc": "Alfajor relleno de kinotos marcerados en whisky, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623530/products/kinotosalwhisky_1_ysyxx3.png",
+    "disp": 0
+  },
+  {
+    "name": "Nevado y Cognac",
+    "cat": "licores",
+    "desc": "Alfajor relleno de dulce de leche, chocolate y cognac, con baño de chocolate semiamargo.",
+    "img": "https://res.cloudinary.com/dgf6hvqia/image/upload/v1671623536/products/nevado_yrc5pn.png",
+    "disp": 0
+  }
+]
