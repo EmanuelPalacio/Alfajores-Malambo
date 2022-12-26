@@ -28,6 +28,7 @@ window.addEventListener( "DOMContentLoaded", async () => {
       $( "#popup1" ).css( "opacity", "1" );
 
       $( "#slider" ).slick( {
+        initialSlide: slideId,
         dots: true,
         arrows: true,
         slidesToShow: 1,

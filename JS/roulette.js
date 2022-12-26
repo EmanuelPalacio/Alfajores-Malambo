@@ -20,6 +20,7 @@ window.addEventListener( "DOMContentLoaded", async () => {
       rand = Math.floor( Math.random() * total );
 
     $( ".container__main__roulette__placeholder" ).slick( {
+      initialSlide: rand,
       infinite: true,
       centerMode: true,
       pauseOnFocus: false,
