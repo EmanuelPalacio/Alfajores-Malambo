@@ -1,7 +1,7 @@
 import getData from "./getData.js";
 
 window.addEventListener( "DOMContentLoaded", async () => {
-  const data = "/data/products.json";
+  const data = "./data/products.json";
   const products = await getData( data );
   const container = document.getElementById( "roulette" );
   let slide = 0;
