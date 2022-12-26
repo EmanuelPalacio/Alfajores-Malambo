@@ -1,8 +1,7 @@
 import getData from "./getData.js";
 
 window.addEventListener( "DOMContentLoaded", async () => {
-   const data = "./data/products.json";
-   const products = await getData( data );
+   const products = await getData();
 
    const filter = ( string ) => {
       const category = products.filter( ( product ) => product.cat === string );
