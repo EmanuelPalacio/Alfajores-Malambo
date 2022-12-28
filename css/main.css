@@ -73,7 +73,7 @@ body {
   display: flex;
   align-items: flex-end;
   height: 150px;
-  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0.5) 0%, rgba(2, 0, 36, 0) 70%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
 }
 .menu .menu__list {
   display: flex;
@@ -511,6 +511,24 @@ body {
   height: 50px;
   width: 160px;
   background-color: #fcc719;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info li p > i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  width: 30px;
 }
 
 .products {

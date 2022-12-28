@@ -111,6 +111,24 @@
           }
           
         }
+        .contact__info{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 15px;
+          margin-bottom: 10%;
+          font-size: 1rem;
+          h3{
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          li p > i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            width: 30px;
+          }
+        }
       }
     }
   }
