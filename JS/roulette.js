@@ -10,7 +10,7 @@ window.addEventListener( "DOMContentLoaded", async () => {
     const div = document.createElement( "div" );
     div.classList.add( "carousel__container" );
     div.innerHTML = `<img class='carousel__container__alfajor' src=${product.img} alt=${product.name}>
-                      <a class='btn__hidden btn__flavor slider__opener' href='#' id=${slideId}>${product.name}</a>
+                      <button class='btn__hidden btn__flavor slider__opener' id=${slideId}>${product.name}</button>
                    `;
     container.appendChild( div );
   } );
@@ -21,38 +21,42 @@ window.addEventListener( "DOMContentLoaded", async () => {
 
     $( ".container__main__roulette__placeholder" ).slick( {
       initialSlide: rand,
-      infinite: true,
-      centerMode: true,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      respondTo: "min",
-      centerPadding: "60px",
-      slidesToShow: 3,       
-      cssEase: "linear",
+      slidesToShow: 3,
+      slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 1500,
+      autoplaySpeed: 0,
+      speed: 3000,
+      variableWidth: true,
+      adaptiveHeight: false,
+      cssEase: 'linear' ,
+      centerMode: true,
       arrows: false,
       dragabble: false,
-      variableWidth: true,
-      adaptiveHeight: true,
+      infinite: true,
+      pauseOnFocus: false,
+      pauseOnHover: false
+
     } );
-    $( ".container__main__roulette__placeholder" ).slick( "slickGoTo", rand );
-  } );
+  } 
+  );
   $( "#roulette_btn" ).click( function () {
     $( ".container__main__roulette__placeholder" ).slick(
       "slickSetOption",
-      "autoplaySpeed",
-      1,
+      "speed",
+      300,
       true
-    );
+    )
+    $(".slick-.container__main__roulette__placeholder .slick-active").css("transition", "all 0.2s ease-in-out")
 
     setTimeout( function () {
       $( ".container__main__roulette__placeholder" ).slick( "slickPause" );
-      $( ".slick-current a" ).removeClass( "btn__hidden" );
+      $( ".slick-current button" ).removeClass( "btn__hidden" );
       $( ".container__main__roulette__placeholder" ).addClass( "fireworks" );
     }, 5000 );
     $( this ).html( "Girar Nuevamente" );
     $( this ).removeClass( "btn" );
     $( this ).addClass( "link" );
+    $( this ).click( function () { $( ".slick-current button" ).addClass( "btn__hidden" ), $( ".container__main__roulette__placeholder" ).removeClass( "fireworks" ) } )
   } );
+  
 } );

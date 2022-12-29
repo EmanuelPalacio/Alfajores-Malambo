@@ -11,7 +11,6 @@
         rgba(0, 0, 0, 0.5) 100%),
       url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px 10px 0px 0px;
     padding-right: 25vw;
 
     h1 {
@@ -40,7 +39,6 @@
     flex-direction: row;
     background-color: $primary;
     padding: 2vh 5vw;
-    border-radius: 0px 0px 10px 10px;
 
     img {
       max-width: 280px;
@@ -77,13 +75,14 @@
     margin: 70px auto;
     padding: 20px;
     background: rgba(0, 0, 0, 0);
-    border-radius: 5px;
+    border-radius: 10px;
     width: 60vw;
     position: relative;
     transition: all 0.5s ease-in-out;
 
     .close {
       position: absolute;
+      cursor: pointer;
       top: 8vh;
       right: 4vw;
       transition: all 200ms;
@@ -102,6 +101,7 @@
       max-height: 30%;
       overflow: hidden;
       margin: 0 auto;
+      border-radius: 10px;
 
       .slick-next {
         right: 30px !important;

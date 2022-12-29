@@ -128,14 +128,13 @@ body {
 }
 
 .container {
-  width: 80%;
+  min-width: 80%;
   display: flex;
   flex-flow: column;
 }
 .container__header {
   display: flex;
   flex-flow: column;
-  width: 105%;
   background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
   background-repeat: no-repeat;
   background-size: 210px, cover;
@@ -283,11 +282,23 @@ body {
 .container__main__roulette__placeholder img {
   margin: 0 10rem;
 }
+.container__main__roulette__placeholder .slick-track {
+  transition: all 0.5s ease-in-out !important;
+}
 .container__main__roulette__placeholder .slick-list {
   transition: all 0.5s ease-in-out !important;
   transform: scale(0.6, 0.6) !important;
+  height: 50vh;
+  max-height: 100%;
   overflow: visible !important;
   padding: 0 60rem !important;
+}
+.container__main__roulette__placeholder .slick-track,
+.container__main__roulette__placeholder .slick-list {
+  perspective: 2000;
+  -webkit-perspective: 2000;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .container__main__roulette__placeholder .slick-center {
   transition: all 0.5s ease-in-out !important;
@@ -297,14 +308,13 @@ body {
   background-size: cover;
 }
 .container__main__roulette__placeholder .slick-active {
-  transition: all 2s ease-in-out;
+  transition: all 0.5s ease-in-out !important;
 }
 .container__main__roulette__placeholder .carousel__container {
-  width: fit-content;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: column wrap;
   align-items: center;
+  justify-content: center;
 }
 .container__main__roulette__placeholder .carousel__container .btn__flavor {
   display: flex;
@@ -382,13 +392,13 @@ body {
     background-size: 0px, cover;
   }
   25% {
-    background-size: 300px, cover;
-  }
-  50% {
     background-size: 600px, cover;
   }
+  50% {
+    background-size: 0px, cover;
+  }
   75% {
-    background-size: 300px, cover;
+    background-size: 600px, cover;
   }
   100% {
     background-size: 0px, cover;
@@ -398,7 +408,7 @@ body {
   background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671716661/home/Animaci%C3%B3n_xgnbtz.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  animation: kaboom 2.5s;
+  animation: kaboom 6s;
   animation-iteration-count: 1;
   transition: all 0.3s ease-in-out;
   background-size: 0;
@@ -816,6 +826,4 @@ body {
   width: 0.6rem !important;
   height: 0.6rem !important;
   margin-top: -0.75px !important;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=index.css.map */
