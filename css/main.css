@@ -692,7 +692,7 @@ body {
   padding: 2vh 5vw;
 }
 .slider__container__main img {
-  max-width: 280px;
+  max-height: 280px;
   margin: 5vh;
 }
 .slider__container__main p {
@@ -766,16 +766,16 @@ body {
 }
 .overlay .popup .content .slick-arrow {
   z-index: 2 !important;
-  width: 60px !important;
-  height: 60px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 .overlay .popup .content .slick-arrow:before {
   content: "" !important;
   width: 100% !important;
   height: 100% !important;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10vh;
+  left: 1vw;
   opacity: 1 !important;
 }
 .overlay .popup .content .slick-dots {
