@@ -16,11 +16,8 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
 
   $(document).ready(function () {
-    let total = $(".carousel__container").length,
-      rand = Math.floor(Math.random() * total);
 
     $(".container__main__roulette__placeholder").slick({
-      initialSlide: rand,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
