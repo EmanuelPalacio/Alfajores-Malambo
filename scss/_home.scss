@@ -5,13 +5,14 @@
 }
 
 .container {
-  min-width: 80%;
+  width: 80%;
   display: flex;
   flex-flow: column;
 
   &__header {
     display: flex;
     flex-flow: column;
+    width: 105%;
     background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"),
       url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
     background-repeat: no-repeat;
@@ -168,30 +169,17 @@
           margin: 0 10rem;
         }
 
-        .slick-track {
-          transition: all 0.5s ease-in-out !important;
-        }
 
         .slick-list {
-          transition: all 0.5s ease-in-out !important;
-          transform: scale(0.6, 0.6) !important;
-          height: 50vh;
-          max-height: 100%;
+          transition: all ease-in-out;
+          transform: scale(0.6, 0.6);
           overflow: visible !important;
           padding: 0 60rem !important;
         }
 
-        .slick-track,
-        .slick-list {
-          perspective: 2000;
-          -webkit-perspective: 2000;
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-        }
-
         .slick-center {
-          transition: all 0.5s ease-in-out !important;
-          transform: scale(1.6, 1.6) !important;
+          transition: all ease-in-out ;
+          transform: scale(1.6, 1.6);
           overflow-y: visible !important;
           background-image: radial-gradient(20rem at center,
               rgb(255, 255, 255),
@@ -201,14 +189,15 @@
         }
 
         .slick-active {
-          transition: all 0.5s ease-in-out !important;
+          transition: all 2.999s ease-in-out;
         }
 
         .carousel__container {
+          width: fit-content;
           display: flex;
-          flex-flow: column wrap;
-          align-items: center;
+          flex-direction: column;
           justify-content: center;
+          align-items: center;
 
           .btn__flavor {
             @include buttons(226px, 55px);
@@ -269,15 +258,15 @@
   }
 
   25% {
-    background-size: 600px, cover;
+    background-size: 300px, cover;
   }
 
   50% {
-    background-size: 0px, cover;
+    background-size: 600px, cover;
   }
 
   75% {
-    background-size: 600px, cover;
+    background-size: 300px, cover;
   }
 
   100% {
@@ -289,8 +278,12 @@
   background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671716661/home/Animaci%C3%B3n_xgnbtz.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  animation: kaboom 1s;
-  animation-iteration-count: 3;
+  animation: kaboom 2.5s;
+  animation-iteration-count: 1;
   transition: all 0.3s ease-in-out;
   background-size: 0;
+}
+
+.slick-slider div {
+  transition: none;
 }
