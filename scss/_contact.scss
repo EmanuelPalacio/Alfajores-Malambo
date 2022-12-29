@@ -28,7 +28,17 @@
       background-position: 85% 100% , 0 100%;
       
         .contact__tittle{
-          margin-left: 10%;
+          font-size: 2rem;
+          margin: 0 0 5% 10%;
+
+          h1 span {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 3px;
+            font-weight: 400;
+          }
         }
     }
     .contact__body{
@@ -37,6 +47,8 @@
       text-align: center;
       
       h2 span{
+        font-size: 2rem;
+        letter-spacing: 2px;
         padding: 5px 30px;
         border-bottom: 2px solid $tertiary;
       }
@@ -108,8 +120,35 @@
             height: 50px;
             width: 160px;
             background-color: $tertiary;
+            font-weight: 800;
+
+            &:hover{
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+            &:active{
+              transform: scale(0.9);
+            }
           }
           
+        }
+        .contact__info{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 15px;
+          margin-bottom: 10%;
+          font-size: 1rem;
+          h3{
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          li p > i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            width: 30px;
+          }
         }
       }
     }
