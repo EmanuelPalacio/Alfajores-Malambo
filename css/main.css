@@ -477,27 +477,26 @@ body {
   justify-content: center;
   align-items: center;
   width: 70%;
-  gap: 15px;
+  gap: 5px 15px;
   grid-template-areas: "name     email" "textarea textarea" "btn      btn";
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .contact__name {
   grid-area: name;
-  height: 70px;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .contact__email {
   grid-area: email;
-  height: 70px;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .contact__message {
   grid-area: textarea;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .error {
-  display: none;
+  display: block;
+  visibility: hidden;
   text-align: start;
   color: red;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .error--active {
-  display: block;
+  visibility: visible;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form textarea {
   width: 100%;
@@ -545,7 +544,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   font-size: 1rem;
 }
 .contact .contact__content .contact__body .contact__sections .contact__info h3 {
