@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", cursive;
+}
+
 a {
   color: #ffffff;
 }
@@ -73,7 +77,7 @@ body {
   display: flex;
   align-items: flex-end;
   height: 150px;
-  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0.5) 0%, rgba(2, 0, 36, 0) 70%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670971688/menu/fondo_madera_mpc1uo.png");
 }
 .menu .menu__list {
   display: flex;
@@ -83,6 +87,10 @@ body {
   height: 2rem;
   background-color: #1a1a1a;
   z-index: 9;
+  font-size: 1.2rem;
+}
+.menu .menu__list li:nth-child(2) {
+  margin-bottom: 25px;
 }
 
 .footer {
@@ -435,7 +443,16 @@ body {
   background-position: 85% 100%, 0 100%;
 }
 .contact .contact__content .contact__header .contact__tittle {
-  margin-left: 10%;
+  font-size: 2rem;
+  margin: 0 0 5% 10%;
+}
+.contact .contact__content .contact__header .contact__tittle h1 span {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 .contact .contact__content .contact__body {
   width: 100%;
@@ -443,6 +460,8 @@ body {
   text-align: center;
 }
 .contact .contact__content .contact__body h2 span {
+  font-size: 2rem;
+  letter-spacing: 2px;
   padding: 5px 30px;
   border-bottom: 2px solid #fcc719;
 }
@@ -511,6 +530,32 @@ body {
   height: 50px;
   width: 160px;
   background-color: #fcc719;
+  font-weight: 800;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .btn-contact:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .btn-contact:active {
+  transform: scale(0.9);
+}
+.contact .contact__content .contact__body .contact__sections .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info li p > i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  width: 30px;
 }
 
 .products {
