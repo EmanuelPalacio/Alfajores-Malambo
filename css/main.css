@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", cursive;
+}
+
 a {
   color: #ffffff;
 }
@@ -435,7 +439,16 @@ body {
   background-position: 85% 100%, 0 100%;
 }
 .contact .contact__content .contact__header .contact__tittle {
-  margin-left: 10%;
+  font-size: 2rem;
+  margin: 0 0 5% 10%;
+}
+.contact .contact__content .contact__header .contact__tittle h1 span {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 .contact .contact__content .contact__body {
   width: 100%;
@@ -443,6 +456,8 @@ body {
   text-align: center;
 }
 .contact .contact__content .contact__body h2 span {
+  font-size: 2rem;
+  letter-spacing: 2px;
   padding: 5px 30px;
   border-bottom: 2px solid #fcc719;
 }

@@ -28,7 +28,17 @@
       background-position: 85% 100% , 0 100%;
       
         .contact__tittle{
-          margin-left: 10%;
+          font-size: 2rem;
+          margin: 0 0 5% 10%;
+
+          h1 span {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 3px;
+            font-weight: 400;
+          }
         }
     }
     .contact__body{
@@ -37,6 +47,8 @@
       text-align: center;
       
       h2 span{
+        font-size: 2rem;
+        letter-spacing: 2px;
         padding: 5px 30px;
         border-bottom: 2px solid $tertiary;
       }
