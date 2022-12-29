@@ -171,15 +171,15 @@
 
 
         .slick-list {
-          transition: all 0.5s ease-in-out !important;
-          transform: scale(0.6, 0.6) !important;
+          transition: all ease-in-out;
+          transform: scale(0.6, 0.6);
           overflow: visible !important;
           padding: 0 60rem !important;
         }
 
         .slick-center {
-          transition: all 0.5s ease-in-out !important;
-          transform: scale(1.6, 1.6) !important;
+          transition: all ease-in-out ;
+          transform: scale(1.6, 1.6);
           overflow-y: visible !important;
           background-image: radial-gradient(20rem at center,
               rgb(255, 255, 255),
@@ -189,7 +189,7 @@
         }
 
         .slick-active {
-          transition: all 2s ease-in-out;
+          transition: all 2.999s ease-in-out;
         }
 
         .carousel__container {

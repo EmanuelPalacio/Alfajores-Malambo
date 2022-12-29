@@ -284,20 +284,20 @@ body {
   margin: 0 10rem;
 }
 .container__main__roulette__placeholder .slick-list {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(0.6, 0.6) !important;
+  transition: all ease-in-out;
+  transform: scale(0.6, 0.6);
   overflow: visible !important;
   padding: 0 60rem !important;
 }
 .container__main__roulette__placeholder .slick-center {
-  transition: all 0.5s ease-in-out !important;
-  transform: scale(1.6, 1.6) !important;
+  transition: all ease-in-out;
+  transform: scale(1.6, 1.6);
   overflow-y: visible !important;
   background-image: radial-gradient(20rem at center, rgb(255, 255, 255), rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0)) !important;
   background-size: cover;
 }
 .container__main__roulette__placeholder .slick-active {
-  transition: all 2s ease-in-out;
+  transition: all 2.999s ease-in-out;
 }
 .container__main__roulette__placeholder .carousel__container {
   width: fit-content;
