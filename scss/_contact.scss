@@ -120,6 +120,15 @@
             height: 50px;
             width: 160px;
             background-color: $tertiary;
+            font-weight: 800;
+
+            &:hover{
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+            &:active{
+              transform: scale(0.9);
+            }
           }
           
         }

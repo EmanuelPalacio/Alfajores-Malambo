@@ -526,6 +526,14 @@ body {
   height: 50px;
   width: 160px;
   background-color: #fcc719;
+  font-weight: 800;
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .btn-contact:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.contact .contact__content .contact__body .contact__sections .contact__form .btn-contact:active {
+  transform: scale(0.9);
 }
 .contact .contact__content .contact__body .contact__sections .contact__info {
   display: flex;
