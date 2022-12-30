@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   $(document).ready(function () {
 
-    $(".container__main__roulette__placeholder").slick({
+    $(".home__container__main__roulette__placeholder").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   });
   $("#roulette_btn").click(function () {
-    $(".container__main__roulette__placeholder").slick(
+    $(".home__container__main__roulette__placeholder").slick(
       "slickSetOption",
       "speed",
       400,
@@ -47,16 +47,16 @@ window.addEventListener("DOMContentLoaded", async () => {
     );
 
     setTimeout(function () {
-      $(".container__main__roulette__placeholder").slick("slickPause");
+      $(".home__container__main__roulette__placeholder").slick("slickPause");
       $(".slick-current button").removeClass("btn__hidden");
-      $(".container__main__roulette__placeholder").addClass("fireworks");
+      $(".home__container__main__roulette__placeholder").addClass("fireworks");
     }, 5000);
     $(this).html("Girar Nuevamente");
     $(this).removeClass("btn");
     $(this).addClass("link");
     $(this).click(function () {
       $(".slick-current button").addClass("btn__hidden"),
-        $(".container__main__roulette__placeholder").removeClass("fireworks");
+        $(".home__container__main__roulette__placeholder").removeClass("fireworks");
     });
   });
 });
