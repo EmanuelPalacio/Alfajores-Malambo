@@ -17,8 +17,8 @@ window.addEventListener( "DOMContentLoaded", async () => {
          div.classList.add( "alfajor__container" );
          div.setAttribute( "id", `${product.name}` );
          div.innerHTML = `
-                        <a href="#" class="slider__opener" id="${slideId}">
-                        <img src="${product.img}" alt="${product.name}"></a>
+                        <div class="slider__opener" id="${slideId}">
+                        <img src="${product.img}" alt="${product.name}"></div>
                      `;
          container.appendChild( div );
       } );
