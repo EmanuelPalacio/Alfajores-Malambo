@@ -550,6 +550,19 @@ body {
   width: 30px;
 }
 
+@media (max-width: 1200px) {
+  .contact .contact__content {
+    margin-bottom: 0;
+    min-width: 100%;
+    border-radius: 0;
+  }
+  .contact .contact__content .contact__body .contact__sections {
+    justify-content: center;
+  }
+  .contact .contact__content .contact__body .contact__sections .contact__info {
+    display: none;
+  }
+}
 .products {
   display: flex;
   justify-content: center;

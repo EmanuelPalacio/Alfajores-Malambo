@@ -162,4 +162,21 @@
       }
     }
   }
-} 
+}
+@media (max-width:1200px){
+  .contact{
+    .contact__content{
+      margin-bottom: 0;
+      min-width: 100%;
+      border-radius: 0;
+      .contact__body{
+        .contact__sections{
+          justify-content: center;
+          .contact__info{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
