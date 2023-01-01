@@ -1,7 +1,7 @@
 const form = document.querySelector(".contact__form");
 const dataEntry = document.querySelectorAll(".dataEntry");
 const expressions = {
-  name: /^[a-zA-Z ]*$/,
+  name: /^[a-zA-Z ]{3,150}/,
   email:
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g,
   message: /^[a-zA-Z-0-9 ]{2,150}/,
@@ -58,9 +58,23 @@ form.addEventListener("submit", (elem) => {
   const { name, email, message } = valideExpressions;
   elem.preventDefault();
   if (name && email && message) {
-    document
-      .querySelectorAll(`.dataEntry`)
-      .forEach((e) => e.classList.remove("validate--true"));
+    dataEntry.forEach((e) => e.classList.remove("validate--true"));
     form.reset();
+  } else {
+    dataEntry.forEach((e) => {
+      const target = e.name;
+      const data = e.value;
+      switch (target) {
+        case "name":
+          validateStyle(expressions.name, data, ".contact__name", target);
+          break;
+        case "email":
+          validateStyle(expressions.email, data, ".contact__email", target);
+          break;
+        case "message":
+          validateStyle(expressions.message, data, ".contact__message", target);
+          break;
+      }
+    });
   }
 });
