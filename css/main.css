@@ -12,6 +12,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Bebas Neue", cursive;
 }
 
+h1, h3 {
+  font-size: 3.313rem;
+}
+
+h2, h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 a {
   color: #ffffff;
 }
@@ -104,7 +122,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
-  height: 230px;
+  height: 25vh;
   background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671070267/footer/Footbarfondo_s7dmgj.png");
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
   z-index: 100;
@@ -114,7 +132,6 @@ body {
 }
 .footer h5 {
   font-family: "Bebas Neue", cursive;
-  font-size: 25px;
   color: #ffffff;
   font-weight: 200;
 }
@@ -122,7 +139,7 @@ body {
   margin: 2vh 0;
 }
 .footer li i {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-right: 1vw;
 }
 
@@ -130,6 +147,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
 }
 .home__container {
   display: flex;
@@ -149,10 +167,9 @@ body {
   width: 105%;
   background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
   background-repeat: no-repeat;
-  background-size: 210px, cover;
+  background-size: 22.6vh, cover;
   background-position: 85% 100%, 0 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: 2;
 }
 .home__container__header__welcome {
   display: flex;
@@ -168,58 +185,64 @@ body {
   width: 100%;
 }
 .home__container__header__welcome__text {
-  max-width: 20vw;
-}
-.home__container__header__welcome__text h1 {
-  font-family: "Bebas Neue", cursive;
-  line-height: 100%;
-  font-size: 53px;
+  max-width: 20.4687vw;
 }
 .home__container__header__welcome__text h2 {
   font-family: "Inter", sans-serif;
-  text-transform: uppercase;
-  font-size: 32px;
-  font-weight: 200;
 }
 .home__container__header__welcome__text p {
   margin-top: 1rem;
-  font-size: 22px;
+  text-align: justify;
 }
 .home__container__main h3 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 53px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   text-align: center;
 }
 .home__container__main hr {
-  height: 3px;
+  height: 0.188rem;
   border: none;
   background-color: #fcc719;
   margin: 0 auto 5rem;
   width: 25vw;
 }
 .home__container__main__variedades__menu {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.875rem;
   margin-bottom: 15vh;
+  overflow-x: auto;
+  width: auto;
+  height: 32.293vh;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
 }
 .home__container__main__variedades__menu__item:nth-child(1) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg");
+  margin: auto;
+  max-width: 18.75rem;
 }
 .home__container__main__variedades__menu__item:nth-child(2) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg");
+  margin: auto;
+  max-width: 18.75rem;
 }
 .home__container__main__variedades__menu__item:nth-child(3) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg");
+  margin: auto;
+  max-width: 18.75rem;
 }
 .home__container__main__variedades__menu__item:nth-child(4) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg");
+  margin: auto;
+  max-width: 18.75rem;
 }
 .home__container__main__variedades__menu__item:nth-child(5) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.28%, #000000 100%), url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg");
+  margin: auto;
+  max-width: 18.75rem;
 }
 .home__container__main__variedades__menu__item {
+  flex: 0 0 auto;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -242,7 +265,7 @@ body {
   border-radius: 0 26px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -312,14 +335,14 @@ body {
   justify-content: center;
   position: relative;
   top: 4vh;
-  width: 226px;
-  height: 55px;
+  width: 14.125rem;
+  height: 3.438rem;
   background-color: #fcc719;
   border: none;
   border-radius: 0 26px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -341,14 +364,14 @@ body {
   justify-content: center;
   position: relative;
   top: 4vh;
-  width: 226px;
-  height: 55px;
+  width: 14.125rem;
+  height: 3.438rem;
   background-color: #fcc719;
   border: none;
   border-radius: 0 26px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -384,7 +407,6 @@ body {
   line-height: 70%;
 }
 .home__container__main__about__text h4 {
-  font-size: 24px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
   margin-bottom: 2vh;
@@ -395,13 +417,13 @@ body {
     background-size: 0px, cover;
   }
   25% {
-    background-size: 300px, cover;
+    background-size: 18.75rem, cover;
   }
   50% {
-    background-size: 600px, cover;
+    background-size: 37.5rem, cover;
   }
   75% {
-    background-size: 300px, cover;
+    background-size: 18.75rem, cover;
   }
   100% {
     background-size: 0px, cover;
@@ -627,18 +649,16 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .products__container__header__title {
-  margin-left: 112px;
-  margin-bottom: 149px;
+  margin-left: 5.8vw;
+  margin-bottom: 16.2vh;
 }
 .products__container__header__title h1 {
   font-family: "Bebas Neue", cursive;
   line-height: 100%;
-  font-size: 53px;
 }
 .products__container__header__title h2 {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: 32px;
   font-weight: 200;
 }
 .products__container__main {
@@ -650,7 +670,6 @@ body {
 }
 .products__container__main__title h3 {
   font-family: "Bebas Neue", cursive;
-  font-size: 53px;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -674,32 +693,58 @@ body {
   flex-direction: column;
 }
 .products__container__main__alfajores .alfajor__container .slider__opener img {
-  max-width: 198px;
+  max-width: 14rem;
 }
 .products__container__main__alfajores .alfajor__container .slider__opener:hover {
   cursor: pointer;
 }
 
 #clasicos {
-  min-height: 470px;
+  min-height: 50.5vh;
 }
 
 #postres {
-  min-height: 710px;
+  min-height: 76.4vh;
 }
 
 #varietales {
-  min-height: 230px;
+  min-height: 24.75vh;
 }
 
 #frutales {
-  min-height: 445px;
+  min-height: 23vh;
 }
 
 #licores {
-  min-height: 450px;
+  min-height: 23.5vh;
 }
 
+@media (max-width: 425px) {
+  html {
+    font-size: 60%;
+  }
+  html .products__container {
+    width: 100%;
+  }
+  html .products__container__header {
+    width: 100%;
+    height: 25vh;
+    background-size: 100px, cover;
+    background-position: 95% 105%, 0 250%;
+  }
+  html .products__container__header__title {
+    margin-top: 10vh;
+  }
+  html .products__container__main .alfajor__container {
+    width: 50%;
+  }
+  html .products__container__main .alfajor__container .slider__opener img {
+    width: 100%;
+  }
+  .float {
+    display: none;
+  }
+}
 .slider__container {
   width: 80vw;
   overflow-x: hidden;
@@ -715,7 +760,6 @@ body {
 .slider__container__header h1 {
   font-family: "Bebas Neue", cursive;
   line-height: 100%;
-  font-size: 53px;
   color: #ffffff;
   font-weight: 100;
   margin: 5vh auto 1vh;
@@ -741,7 +785,6 @@ body {
   margin: 5vh;
 }
 .slider__container__main p {
-  font-size: 20px;
   font-weight: 400;
 }
 .slider__container__main__warn {
