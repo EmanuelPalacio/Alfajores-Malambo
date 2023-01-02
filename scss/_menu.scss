@@ -20,3 +20,15 @@
     }
   }
 }
+
+@media (max-width:600px) {
+  .menu{
+    .menu__list{
+      li:nth-child(2){
+        a img{
+          width: 180px;
+        }
+      }
+    }
+  }
+}

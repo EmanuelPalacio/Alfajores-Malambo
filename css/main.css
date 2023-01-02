@@ -93,6 +93,11 @@ body {
   margin-bottom: 25px;
 }
 
+@media (max-width: 600px) {
+  .menu .menu__list li:nth-child(2) a img {
+    width: 180px;
+  }
+}
 .footer {
   position: relative;
   display: flex;
@@ -446,7 +451,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .contact .contact__content .contact__header .contact__tittle {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   align-self: flex-start;
   margin: 10px 0 0 10%;
 }
@@ -461,10 +466,11 @@ body {
 .contact .contact__content .contact__body {
   width: 100%;
   height: 100%;
+  padding-top: 5vh;
   text-align: center;
 }
 .contact .contact__content .contact__body h2 span {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   padding: 5px 30px;
   border-bottom: 2px solid #fcc719;
@@ -480,7 +486,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 65%;
   gap: 5px 15px;
   grid-template-areas: "name     email" "textarea textarea" "btn      btn";
 }
@@ -557,13 +563,20 @@ body {
   gap: 15px;
   margin-bottom: 5%;
   font-size: 1rem;
+  color: #1a1a1a;
 }
 .contact .contact__content .contact__body .contact__sections .contact__info h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.contact .contact__content .contact__body .contact__sections .contact__info li p > i {
-  margin-right: 15px;
+.contact .contact__content .contact__body .contact__sections .contact__info li a {
+  color: #1a1a1a;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info li a:hover {
+  color: #fcc719;
+}
+.contact .contact__content .contact__body .contact__sections .contact__info li a > i {
+  margin-right: 5px;
   font-size: 1.5rem;
   width: 30px;
 }
@@ -573,6 +586,9 @@ body {
     margin-bottom: 0;
     min-width: 100%;
     border-radius: 0;
+  }
+  .contact .contact__content .contact__header {
+    width: 100%;
   }
   .contact .contact__content .contact__body .contact__sections {
     justify-content: center;
