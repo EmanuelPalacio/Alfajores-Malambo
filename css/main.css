@@ -240,6 +240,12 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: #1a1a1a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.3s ease-in-out;
+}
+.home__container__main__variedades__menu__item .btn:hover {
+  color: #ffffff;
+  transform: scale(1.05);
 }
 .home__container__main__roulette {
   display: flex;
@@ -311,8 +317,14 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: #1a1a1a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   text-align: center;
+}
+.home__container__main__roulette__placeholder .carousel__container .btn__flavor:hover {
+  color: #ffffff;
+  transform: scale(1.05);
 }
 .home__container__main__roulette__placeholder .carousel__container .btn__hidden {
   display: none;
@@ -334,9 +346,15 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: #1a1a1a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.3s ease-in-out;
   position: inherit;
   top: auto;
   cursor: pointer;
+}
+.home__container__main__roulette .btn:hover {
+  color: #ffffff;
+  transform: scale(1.05);
 }
 .home__container__main__roulette .link {
   color: #916d2a;
