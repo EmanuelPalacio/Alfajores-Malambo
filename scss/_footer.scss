@@ -1,11 +1,19 @@
 .footer {
   position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
-  align-content: center;
-  height: 230px;
-  background-image: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671070267/footer/Footbarfondo_s7dmgj.png");
+  align-items: flex-start;
+  height: 25vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671070267/footer/Footbarfondo_s7dmgj.png");
+    background-size: cover;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
   z-index: 100;
 
@@ -15,17 +23,48 @@
 
   h5 {
     font-family: "Bebas Neue", cursive;
-    font-size: 25px;
     color: $primary;
     font-weight: 200;
   }
 
   li {
     margin: 2vh 0;
-
+    align-content: center;
     i {
-      font-size: 20px;
+      font-size: 1.25rem;
       margin-right: 1vw;
+    }
+  }
+  a {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 821px) {
+  .footer {
+    flex-direction: column;
+    align-content: flex-start;
+    height: 30rem;
+
+    img {
+      display: none;
+    }
+
+    a {
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      font-size: 2rem;
+    }
+    a,
+    h5 {
+      margin-left: 2rem;
+    }
+
+    li {
+      margin: 1vh 0;
     }
   }
 }
