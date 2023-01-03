@@ -602,8 +602,7 @@ body {
 }
 .contact .contact__content .contact__header .contact__tittle {
   font-size: 2.2rem;
-  align-self: flex-start;
-  margin: 10px 0 0 10%;
+  margin: 0 0 5% 10%;
 }
 .contact .contact__content .contact__header .contact__tittle h1 span {
   display: block;
@@ -747,6 +746,15 @@ body {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .contact .contact__content .contact__body .contact__sections .contact__form {
+    width: 100%;
+    grid-template-areas: "name     name" "email    email" "textarea textarea" "btn      btn";
+  }
+  .contact .contact__content .contact__body .contact__sections .contact__form textarea, .contact .contact__content .contact__body .contact__sections .contact__form input {
+    width: 80vw;
+  }
+}
 .products {
   display: flex;
   justify-content: center;
@@ -777,8 +785,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .products__container__header__title {
-  margin-left: 5.8vw;
-  margin-bottom: 16.2vh;
+  margin: 0 0 5% 10%;
 }
 .products__container__header__title h1 {
   font-family: "Bebas Neue", cursive;

@@ -1,5 +1,6 @@
 const form = document.querySelector(".contact__form");
 const dataEntry = document.querySelectorAll(".dataEntry");
+const btn = document.querySelector(".btn-contact");
 const expressions = {
   name: /^[a-zA-Z ]{3,150}/,
   email:
@@ -57,8 +58,22 @@ dataEntry.forEach((elem) => {
 form.addEventListener("submit", (elem) => {
   const { name, email, message } = valideExpressions;
   elem.preventDefault();
+  btn.value = "Sending...";
+
+  const serviceID = "default_service";
+  const templateID = "template_e4e6sp9";
+
   if (name && email && message) {
     dataEntry.forEach((e) => e.classList.remove("validate--true"));
+    emailjs.sendForm(serviceID, templateID, form).then(
+      () => {
+        btn.value = "ENVIAR";
+      },
+      (err) => {
+        btn.value = "Error";
+        alert(JSON.stringify(err));
+      }
+    );
     form.reset();
   } else {
     dataEntry.forEach((e) => {

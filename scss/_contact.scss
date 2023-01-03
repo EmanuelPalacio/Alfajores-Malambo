@@ -30,8 +30,7 @@
       
         .contact__tittle{
           font-size: 2.2rem;
-          align-self: flex-start;
-          margin: 10px 0 0 10%;
+          margin: 0 0 5% 10%;
 
           h1 span {
             display: block;
@@ -186,6 +185,28 @@
           justify-content: center;
           .contact__info{
             display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:800px){
+  .contact{
+    .contact__content{
+      .contact__body{
+        .contact__sections{
+          .contact__form{
+            width: 100%;
+            grid-template-areas: 
+            "name     name"
+            "email    email"
+            "textarea textarea"
+            "btn      btn";
+
+            textarea,input{
+              width: 80vw;
+            }
           }
         }
       }
