@@ -38,7 +38,7 @@
           max-width: 30vw;
 
           img {
-            max-width: 500px;
+            max-width: 26.274vw;
           }
         }
 
@@ -77,38 +77,29 @@
       &__variedades__menu {
         display: flex;
         flex-wrap: nowrap;
-        gap: 0.875rem;
+        justify-content: space-around;
+        gap: 1vw;
         margin-bottom: 15vh;
         height: auto;
 
         &__item:nth-child(1) {
-          @include overlay(
-            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg")
-          );
+          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg"));
         }
 
         &__item:nth-child(2) {
-          @include overlay(
-            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg")
-          );
+          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg"));
         }
 
         &__item:nth-child(3) {
-          @include overlay(
-            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg")
-          );
+          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg"));
         }
 
         &__item:nth-child(4) {
-          @include overlay(
-            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg")
-          );
+          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg"));
         }
 
         &__item:nth-child(5) {
-          @include overlay(
-            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg")
-          );
+          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg"));
         }
 
         &__item {
@@ -116,13 +107,13 @@
           display: flex;
           align-items: flex-end;
           justify-content: center;
-          width: 216px;
-          height: 169px;
+          width: 11.35vw;
+          height: 18.19vh;
 
           .btn {
             position: relative;
             top: 4vh;
-            @include buttons(171px, 55px);
+            @include buttons(9vw, 5.92vh);
           }
         }
       }
@@ -147,11 +138,9 @@
           transition: all 0.3s ease;
           mask-image: (to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
             linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-          -webkit-mask-image: linear-gradient(
-              to left,
+          -webkit-mask-image: linear-gradient(to left,
               rgba(0, 0, 0, 1),
-              rgba(0, 0, 0, 0)
-            ),
+              rgba(0, 0, 0, 0)),
             linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
           mask-size: 50.2% 180%;
           -webkit-mask-size: 50.2% 180%;
@@ -176,12 +165,10 @@
             transition: all ease-in-out;
             transform: scale(1.6, 1.6);
             overflow-y: visible !important;
-            background-image: radial-gradient(
-              20rem at center,
-              rgb(255, 255, 255),
-              rgba(255, 255, 255, 0.801),
-              rgba(255, 255, 255, 0)
-            ) !important;
+            background-image: radial-gradient(20rem at center,
+                rgb(255, 255, 255),
+                rgba(255, 255, 255, 0.801),
+                rgba(255, 255, 255, 0)) !important;
             background-size: cover;
           }
 
@@ -246,6 +233,12 @@
             margin-bottom: 2vh;
           }
         }
+
+        &__picture {
+          img {
+            height: 21.25rem;
+          }
+        }
       }
     }
   }
@@ -287,90 +280,101 @@
   transition: none;
 }
 
-@media (max-width: 821px) {
-  .home__container {
-    width: 100%;
-    margin-bottom: 0;
-    border-radius: 0;
+@media (max-width: 1024px) {
+  .home__container__main {
+    &__variedades__menu {
+      flex-direction: column;
+      margin-bottom: 7.5vh;
 
-    &__header {
-      width: 100%;
-      height: 60rem;
-      background-size: 125px, cover;
-      background-position: 100% 100%, 0 100%;
+      &__item {
+        width: 270px;
+        height: 112px;
+        margin: auto auto 35px auto;
 
-      &__welcome {
-        margin: 2rem 0;
-        flex-direction: column;
-        justify-content: center;
-
-        &__image__desktop {
-          display: none;
-        }
-
-        &__image__mobile {
-          display: flex;
-          justify-content: center;
-          max-width: 80vw;
-          margin: 0.5rem 0;
-        }
-
-        &__text {
-          max-width: 70vw;
-
-          h1 {
-            font-size: 4.5rem;
-            line-height: 90%;
-          }
-
-          h2 {
-            font-size: 2.813rem;
-            margin-bottom: 2rem;
-          }
-
-          p {
-            font-size: 1.8rem;
-            text-align: left;
-          }
+        .btn {
+          width: 200px;
+          height: 43px;
+          font-size: large;
         }
       }
     }
-    &__main {
-      &__variedades__menu {
-        flex-direction: column;
-        margin-bottom: 7.5vh;
-        &__item {
-          width: 270px;
-          height: 112px;
-          margin: auto auto 35px auto;
-          .btn {
-            width: 200px;
-            heigth: 43px;
-            font-size: large;
+  }
+
+  @media (max-width: 912px) {
+    .home__container {
+      width: 100%;
+      margin-bottom: 0;
+      border-radius: 0;
+
+      &__header {
+        width: 100%;
+        height: 60rem;
+        background-size: 125px, cover;
+        background-position: 100% 100%, 0 100%;
+
+        &__welcome {
+          margin: 2rem 0;
+          flex-direction: column;
+          justify-content: center;
+
+          &__image__desktop {
+            display: none;
+          }
+
+          &__image__mobile {
+            display: flex;
+            justify-content: center;
+            max-width: 80vw;
+            margin: 0.5rem 0;
+          }
+
+          &__text {
+            max-width: 70vw;
+
+            h1 {
+              font-size: 4.5rem;
+              line-height: 90%;
+            }
+
+            h2 {
+              font-size: 2.813rem;
+              margin-bottom: 2rem;
+            }
+
+            p {
+              font-size: 1.8rem;
+              text-align: left;
+            }
           }
         }
       }
+
       &__roulette {
         margin-bottom: 7.5vh;
+
         &__titulo {
           hr {
             margin-bottom: 0;
           }
         }
+
         &__placeholder {
           min-height: 45vh;
           max-width: 100vw;
         }
       }
+
       &__about {
         flex-direction: column;
         margin-bottom: 5vh;
+
         &__text {
           max-width: 90vw;
         }
+
         &__picture {
           img {
-            width: 90vw;
+            max-width: 90vw;
           }
         }
       }
