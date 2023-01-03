@@ -81,6 +81,9 @@
           flex-direction: column;
 
           .slider__opener {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
               max-width: 14rem;
             }
@@ -115,7 +118,7 @@
   min-height: 23.5vh;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 821px) {
   html {
     font-size: 60%;
 
@@ -124,17 +127,22 @@
 
       &__header {
         width: 100%;
-        height: 25vh;
-        background-size: 100px, cover;
-        background-position: 95% 105%, 0 250%;
+        max-height: 30rem;
+        background-size: 90px, cover;
+        background-position: 95% 105%, 0 100%;
+        overflow: visible;
 
         &__title {
-          margin-top: 10vh;
+          margin-top: 5vh;
         }
       }
       &__main {
+        &__alfajores {
+          gap: 1.5rem;
+          margin-bottom: 5vh;
+        }
         .alfajor__container {
-          width: 50%;
+          width: 30%;
 
           .slider__opener {
             img {

@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   max-width: 100vw;
+
   &__container {
-     display: flex;
+    display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
@@ -17,28 +18,33 @@
     &__header {
       display: flex;
       flex-flow: column;
-      height: 65vh;
+      height: 62vh;
       width: 105%;
       background: url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670980223/menu/Mascota_ssoa7u.png"),
         url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
       background-repeat: no-repeat;
-      background-size: 22.60vh, cover;
+      background-size: 210px, cover;
       background-position: 85% 100%, 0 100%;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
       &__welcome {
+        margin-top: 4rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
 
-        &__image {
+        &__image__desktop {
           margin: 0 5vw;
           max-width: 30vw;
 
           img {
             width: 100%;
           }
+        }
+
+        &__image__mobile {
+          display: none;
         }
 
         &__text {
@@ -57,7 +63,6 @@
     }
 
     &__main {
-
       h3 {
         letter-spacing: 0.03rem;
         text-align: center;
@@ -76,11 +81,7 @@
         flex-wrap: nowrap;
         gap: 0.875rem;
         margin-bottom: 15vh;
-        overflow-x: auto;
-        width: auto;
-        height: 32.293vh;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
+        height: auto;
 
         &__item:nth-child(1) {
           @include overlay(
@@ -163,6 +164,7 @@
 
           img {
             margin: 0 10rem;
+            width: 20rem;
           }
 
           .slick-list {
@@ -285,4 +287,95 @@
 
 .slick-slider div {
   transition: none;
+}
+
+@media (max-width: 821px) {
+  .home__container {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+
+    &__header {
+      width: 100%;
+      height: 60rem;
+      background-size: 125px, cover;
+      background-position: 100% 100%, 0 100%;
+
+      &__welcome {
+        margin: 2rem 0;
+        flex-direction: column;
+        justify-content: center;
+
+        &__image__desktop {
+          display: none;
+        }
+
+        &__image__mobile {
+          display: flex;
+          justify-content: center;
+          max-width: 80vw;
+          margin: 0.5rem 0;
+        }
+
+        &__text {
+          max-width: 70vw;
+
+          h1 {
+            font-size: 4.5rem;
+            line-height: 90%;
+          }
+
+          h2 {
+            font-size: 2.813rem;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            font-size: 1.8rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+    &__main {
+      &__variedades__menu {
+        flex-direction: column;
+        margin-bottom: 7.5vh;
+        &__item {
+          width: 270px;
+          height: 112px;
+          margin: auto auto 35px auto;
+          .btn {
+            width: 200px;
+            heigth: 43px;
+            font-size: large;
+          }
+        }
+      }
+      &__roulette {
+        margin-bottom: 7.5vh;
+        &__titulo {
+          hr {
+            margin-bottom: 0;
+          }
+        }
+        &__placeholder {
+          min-height: 45vh;
+          max-width: 100vw;
+        }
+      }
+      &__about {
+        flex-direction: column;
+        margin-bottom: 5vh;
+        &__text {
+          max-width: 90vw;
+        }
+        &__picture {
+          img {
+            width: 90vw;
+          }
+        }
+      }
+    }
+  }
 }
