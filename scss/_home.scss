@@ -83,23 +83,33 @@
         height: auto;
 
         &__item:nth-child(1) {
-          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg"));
+          @include overlay(
+            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/4_ygwnp4.jpg")
+          );
         }
 
         &__item:nth-child(2) {
-          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg"));
+          @include overlay(
+            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/2_ldefok.jpg")
+          );
         }
 
         &__item:nth-child(3) {
-          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg"));
+          @include overlay(
+            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/5_qiwz9d.jpg")
+          );
         }
 
         &__item:nth-child(4) {
-          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg"));
+          @include overlay(
+            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/3_thyetc.jpg")
+          );
         }
 
         &__item:nth-child(5) {
-          @include overlay(url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg"));
+          @include overlay(
+            url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1671058393/home/variedades/1_da1sjd.jpg")
+          );
         }
 
         &__item {
@@ -138,9 +148,11 @@
           transition: all 0.3s ease;
           mask-image: (to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
             linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-          -webkit-mask-image: linear-gradient(to left,
+          -webkit-mask-image: linear-gradient(
+              to left,
               rgba(0, 0, 0, 1),
-              rgba(0, 0, 0, 0)),
+              rgba(0, 0, 0, 0)
+            ),
             linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
           mask-size: 50.2% 180%;
           -webkit-mask-size: 50.2% 180%;
@@ -165,10 +177,12 @@
             transition: all ease-in-out;
             transform: scale(1.6, 1.6);
             overflow-y: visible !important;
-            background-image: radial-gradient(20rem at center,
-                rgb(255, 255, 255),
-                rgba(255, 255, 255, 0.801),
-                rgba(255, 255, 255, 0)) !important;
+            background-image: radial-gradient(
+              20rem at center,
+              rgb(255, 255, 255),
+              rgba(255, 255, 255, 0.801),
+              rgba(255, 255, 255, 0)
+            ) !important;
             background-size: cover;
           }
 
@@ -299,56 +313,58 @@
       }
     }
   }
+}
 
-  @media (max-width: 912px) {
-    .home__container {
+@media (max-width: 912px) {
+  .home__container {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+
+    &__header {
       width: 100%;
-      margin-bottom: 0;
-      border-radius: 0;
+      height: 60rem;
+      background-size: 125px, cover;
+      background-position: 100% 100%, 0 100%;
 
-      &__header {
-        width: 100%;
-        height: 60rem;
-        background-size: 125px, cover;
-        background-position: 100% 100%, 0 100%;
+      &__welcome {
+        margin: 2rem 0;
+        flex-direction: column;
+        justify-content: center;
 
-        &__welcome {
-          margin: 2rem 0;
-          flex-direction: column;
+        &__image__desktop {
+          display: none;
+        }
+
+        &__image__mobile {
+          display: flex;
           justify-content: center;
+          max-width: 80vw;
+          margin: 0.5rem 0;
+        }
 
-          &__image__desktop {
-            display: none;
+        &__text {
+          max-width: 70vw;
+
+          h1 {
+            font-size: 4.5rem;
+            line-height: 90%;
           }
 
-          &__image__mobile {
-            display: flex;
-            justify-content: center;
-            max-width: 80vw;
-            margin: 0.5rem 0;
+          h2 {
+            font-size: 2.813rem;
+            margin-bottom: 2rem;
           }
 
-          &__text {
-            max-width: 70vw;
-
-            h1 {
-              font-size: 4.5rem;
-              line-height: 90%;
-            }
-
-            h2 {
-              font-size: 2.813rem;
-              margin-bottom: 2rem;
-            }
-
-            p {
-              font-size: 1.8rem;
-              text-align: left;
-            }
+          p {
+            font-size: 1.8rem;
+            text-align: left;
           }
         }
       }
+    }
 
+    &__main {
       &__roulette {
         margin-bottom: 7.5vh;
 
