@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__container {
-     display: flex;
+    display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
@@ -22,60 +23,51 @@
         url("https://res.cloudinary.com/dgf6hvqia/image/upload/v1670985135/menu/BannerFondo_phauic.svg");
       background-repeat: no-repeat;
       background-size: 210px, cover;
-      background-position: 85% 100%, 0 100%;
+      background-position: 90% 105%, 0 100%;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      z-index: 2;
 
       &__welcome {
+        margin-top: 4rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
 
-        &__image {
+        &__image__desktop {
           margin: 0 5vw;
           max-width: 30vw;
 
           img {
-            width: 100%;
+            max-width: 500px;
           }
         }
 
-        &__text {
-          max-width: 20vw;
+        &__image__mobile {
+          display: none;
+        }
 
-          h1 {
-            font-family: "Bebas Neue", cursive;
-            line-height: 100%;
-            font-size: 53px;
-          }
+        &__text {
+          max-width: 24vw;
 
           h2 {
             font-family: "Inter", sans-serif;
-            text-transform: uppercase;
-            font-size: 32px;
-            font-weight: 200;
           }
 
           p {
             margin-top: 1rem;
-            font-size: 22px;
           }
         }
       }
     }
 
     &__main {
-
       h3 {
-        font-family: "Bebas Neue", cursive;
-        font-size: 53px;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.03rem;
         text-align: center;
       }
 
       hr {
-        height: 3px;
+        height: 0.188rem;
         border: none;
         background-color: $tertiary;
         margin: 0 auto 5rem;
@@ -83,10 +75,11 @@
       }
 
       &__variedades__menu {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 14px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.875rem;
         margin-bottom: 15vh;
+        height: auto;
 
         &__item:nth-child(1) {
           @include overlay(
@@ -119,6 +112,7 @@
         }
 
         &__item {
+          flex: 0 0 auto;
           display: flex;
           align-items: flex-end;
           justify-content: center;
@@ -168,6 +162,7 @@
 
           img {
             margin: 0 10rem;
+            width: 20rem;
           }
 
           .slick-list {
@@ -202,7 +197,7 @@
             align-items: center;
 
             .btn__flavor {
-              @include buttons(226px, 55px);
+              @include buttons(14.125rem, 3.438rem);
               cursor: pointer;
               text-align: center;
             }
@@ -214,7 +209,7 @@
         }
 
         .btn {
-          @include buttons(226px, 55px);
+          @include buttons(14.125rem, 3.438rem);
           position: inherit;
           top: auto;
           cursor: pointer;
@@ -246,7 +241,6 @@
           }
 
           h4 {
-            font-size: 24px;
             font-family: "Inter", sans-serif;
             text-transform: uppercase;
             margin-bottom: 2vh;
@@ -263,15 +257,15 @@
   }
 
   25% {
-    background-size: 300px, cover;
+    background-size: 18.75rem, cover;
   }
 
   50% {
-    background-size: 600px, cover;
+    background-size: 37.5rem, cover;
   }
 
   75% {
-    background-size: 300px, cover;
+    background-size: 18.75rem, cover;
   }
 
   100% {
@@ -291,4 +285,95 @@
 
 .slick-slider div {
   transition: none;
+}
+
+@media (max-width: 821px) {
+  .home__container {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+
+    &__header {
+      width: 100%;
+      height: 60rem;
+      background-size: 125px, cover;
+      background-position: 100% 100%, 0 100%;
+
+      &__welcome {
+        margin: 2rem 0;
+        flex-direction: column;
+        justify-content: center;
+
+        &__image__desktop {
+          display: none;
+        }
+
+        &__image__mobile {
+          display: flex;
+          justify-content: center;
+          max-width: 80vw;
+          margin: 0.5rem 0;
+        }
+
+        &__text {
+          max-width: 70vw;
+
+          h1 {
+            font-size: 4.5rem;
+            line-height: 90%;
+          }
+
+          h2 {
+            font-size: 2.813rem;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            font-size: 1.8rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+    &__main {
+      &__variedades__menu {
+        flex-direction: column;
+        margin-bottom: 7.5vh;
+        &__item {
+          width: 270px;
+          height: 112px;
+          margin: auto auto 35px auto;
+          .btn {
+            width: 200px;
+            heigth: 43px;
+            font-size: large;
+          }
+        }
+      }
+      &__roulette {
+        margin-bottom: 7.5vh;
+        &__titulo {
+          hr {
+            margin-bottom: 0;
+          }
+        }
+        &__placeholder {
+          min-height: 45vh;
+          max-width: 100vw;
+        }
+      }
+      &__about {
+        flex-direction: column;
+        margin-bottom: 5vh;
+        &__text {
+          max-width: 90vw;
+        }
+        &__picture {
+          img {
+            width: 90vw;
+          }
+        }
+      }
+    }
+  }
 }

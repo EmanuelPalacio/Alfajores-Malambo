@@ -21,6 +21,25 @@ $txSecondary: #ffffff;
 h1,h2,h3,h4,h5,h6{
   font-family: 'Bebas Neue', cursive;
 }
+
+h1, h3 {
+  font-size: 3.313rem;
+}
+
+h2, h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 a {
   color: $txSecondary;
 
