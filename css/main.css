@@ -739,6 +739,9 @@ body {
   .contact .contact__content .contact__header {
     width: 100%;
   }
+  .contact .contact__content .contact__header .contact__tittle h1 span {
+    font-size: 1.5rem;
+  }
   .contact .contact__content .contact__body .contact__sections {
     justify-content: center;
   }
@@ -747,6 +750,10 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .contact .contact__content .contact__header {
+    background-size: 90px, cover;
+    background-position: 95% 105%, 0 100%;
+  }
   .contact .contact__content .contact__body .contact__sections .contact__form {
     width: 100%;
     grid-template-areas: "name     name" "email    email" "textarea textarea" "btn      btn";
@@ -872,6 +879,9 @@ body {
   }
   .products__container__header__title {
     margin-top: 5vh;
+  }
+  .products__container__header__title h2 {
+    font-size: 1.5rem;
   }
   .products__container__main__alfajores {
     gap: 1.5rem;
