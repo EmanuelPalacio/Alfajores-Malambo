@@ -26,6 +26,7 @@ window.addEventListener( "DOMContentLoaded", async () => {
       let slideId = $( this ).attr( "id" );
       $( "#popup1" ).css( "visibility", "visible" );
       $( "#popup1" ).css( "opacity", "1" );
+      $( "body" ).css( "overflow", "hidden" );
 
       $( "#slider" ).slick( {
         initialSlide: slideId,
@@ -43,6 +44,7 @@ window.addEventListener( "DOMContentLoaded", async () => {
         $( "#popup1" ).css( "visibility", "hidden" );
         $( "#popup1" ).css( "opacity", "0" );
         $( "#slider" ).slick( "unslick" );
+        $( "body" ).css( "overflow", "auto" );
       } );
 
       const $slideShow = $( "#slider" );
