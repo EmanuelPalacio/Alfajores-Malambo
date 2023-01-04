@@ -32,6 +32,9 @@ window.addEventListener("DOMContentLoaded", async () => {
       infinite: true,
       pauseOnFocus: false,
       pauseOnHover: false,
+      touchMove: false,
+      swipe: false,
+      accessibility: false,
     });
   });
   $("#roulette_btn").click(function () {
@@ -45,15 +48,17 @@ window.addEventListener("DOMContentLoaded", async () => {
       "transition",
       "all 0.399s ease-in-out"
     );
+    $(this).removeClass("btn");
+    $(this).html("")
 
     setTimeout(function () {
       $(".home__container__main__roulette__placeholder").slick("slickPause");
       $(".slick-current button").removeClass("btn__hidden");
       $(".home__container__main__roulette__placeholder").addClass("fireworks");
+      $("#roulette_btn").addClass("link");
+      $("#roulette_btn").html("Girar nuevamente");
     }, 5000);
-    $(this).html("Girar Nuevamente");
-    $(this).removeClass("btn");
-    $(this).addClass("link");
+    
     $(this).click(function () {
       $(".slick-current button").addClass("btn__hidden"),
         $(".home__container__main__roulette__placeholder").removeClass("fireworks");

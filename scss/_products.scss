@@ -29,11 +29,10 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
       &__title {
-          margin: 0 0 5% 10%;
+        margin: 0 0 5% 10%;
 
         h1 {
           font-family: "Bebas Neue", cursive;
-          line-height: 100%;
         }
 
         h2 {
@@ -123,22 +122,23 @@
     width: 100%;
 
     &__header {
-      width: 100%;
-      max-height: 30rem;
       background-size: 90px, cover;
       background-position: 95% 105%, 0 100%;
-      overflow: visible;
+      width: 100%;
 
       &__title {
-        margin-top: 5vh;
-
-        h2{
+        h2 {
           font-size: 1.5rem;
         }
       }
     }
 
     &__main {
+      &__title hr {
+          width: 40vw;
+        
+      }
+
       &__alfajores {
         gap: 1.5rem;
         margin-bottom: 5vh;
@@ -155,8 +155,4 @@
       }
     }
   }
-}
-
-.float {
-  display: none;
 }
