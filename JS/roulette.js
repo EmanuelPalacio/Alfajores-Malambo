@@ -49,13 +49,13 @@ window.addEventListener("DOMContentLoaded", async () => {
       "all 0.399s ease-in-out"
     );
     $(this).removeClass("btn");
+    $(this).addClass("link");
     $(this).html("")
 
     setTimeout(function () {
       $(".home__container__main__roulette__placeholder").slick("slickPause");
       $(".slick-current button").removeClass("btn__hidden");
       $(".home__container__main__roulette__placeholder").addClass("fireworks");
-      $("#roulette_btn").addClass("link");
       $("#roulette_btn").html("Girar nuevamente");
     }, 5000);
     
