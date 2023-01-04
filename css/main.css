@@ -145,7 +145,7 @@ body {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   min-height: 25vh;
   padding: 2rem 0;
