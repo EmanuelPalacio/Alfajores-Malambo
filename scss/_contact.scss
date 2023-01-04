@@ -179,6 +179,9 @@
       border-radius: 0;
       .contact__header{
         width: 100%;
+        .contact__tittle h1 span{
+          font-size: 1.5rem;
+        }
       }
       .contact__body{
         .contact__sections{
@@ -194,6 +197,10 @@
 @media (max-width:800px){
   .contact{
     .contact__content{
+      .contact__header{
+        background-size: 90px, cover;
+        background-position: 95% 105% , 0 100%;
+      }
       .contact__body{
         .contact__sections{
           .contact__form{
