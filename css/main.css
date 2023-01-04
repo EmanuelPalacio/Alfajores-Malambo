@@ -441,8 +441,11 @@ body {
   transform: scale(1.05);
 }
 .home__container__main__roulette .link {
+  width: 14.125rem;
+  height: 3.438rem;
   color: #916d2a;
   text-decoration: underline;
+  text-align: center;
   cursor: pointer;
 }
 .home__container__main__about {

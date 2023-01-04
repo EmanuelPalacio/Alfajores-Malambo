@@ -218,8 +218,11 @@
         }
 
         .link {
+          width: 14.125rem;
+          height: 3.438rem;
           color: $quaternary;
           text-decoration: underline;
+          text-align: center;
           cursor: pointer;
         }
       }
