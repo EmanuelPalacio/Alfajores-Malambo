@@ -37,7 +37,6 @@
             font-size: 2rem;
             line-height: 1.5rem;
             font-family: 'Inter', sans-serif;
-            letter-spacing: 3px;
             font-weight: 400;
           }
         }
@@ -51,10 +50,10 @@
       h2 {
         margin-bottom: 15px;
         span{
-        font-size: 3rem;
+        font-size: 3.313rem;
         font-weight: bold;
-        letter-spacing: 2px;
         padding: 0px 5vw;
+        letter-spacing: 0.03em;
         border-bottom: 3px solid $tertiary;
       }
     }
@@ -159,6 +158,8 @@
             font-weight: bold;
           }
           li a {
+            display: flex;
+            align-items: center;
             color: $secondary;
 
             &:hover{
@@ -185,6 +186,7 @@
         width: 100%;
         .contact__tittle h1 span{
           font-size: 1.5rem;
+          line-height: 100%;
         }
       }
       .contact__body{
