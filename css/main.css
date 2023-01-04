@@ -122,12 +122,17 @@ body {
   height: 2rem;
   background-color: #1a1a1a;
   z-index: 9;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .menu .menu__list li:nth-child(2) {
   margin-bottom: 25px;
 }
 
+@media (max-width: 800px) {
+  .menu .menu__list {
+    font-size: 1.8rem;
+  }
+}
 @media (max-width: 600px) {
   .menu {
     height: 90px;
@@ -615,14 +620,18 @@ body {
 .contact .contact__content .contact__body {
   width: 100%;
   height: 100%;
-  padding-top: 5vh;
+  padding: 5vh 0;
   text-align: center;
+}
+.contact .contact__content .contact__body h2 {
+  margin-bottom: 15px;
 }
 .contact .contact__content .contact__body h2 span {
   font-size: 3rem;
+  font-weight: bold;
   letter-spacing: 2px;
-  padding: 5px 30px;
-  border-bottom: 2px solid #fcc719;
+  padding: 0px 5vw;
+  border-bottom: 3px solid #fcc719;
 }
 .contact .contact__content .contact__body .contact__sections {
   display: flex;
@@ -760,6 +769,7 @@ body {
   }
   .contact .contact__content .contact__body .contact__sections .contact__form textarea, .contact .contact__content .contact__body .contact__sections .contact__form input {
     width: 80vw;
+    font-size: 1.5rem;
   }
 }
 .products {
