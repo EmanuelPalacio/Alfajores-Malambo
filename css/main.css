@@ -170,6 +170,9 @@ body {
   font-size: 1.6rem;
   margin-right: 1rem;
 }
+.footer li .address, .footer li span {
+  font-size: 1rem;
+}
 .footer a {
   display: flex;
   align-content: center;
@@ -199,6 +202,16 @@ body {
   }
   .footer ul li {
     margin: 1vh 0;
+  }
+  .footer ul li .address {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 1.5rem;
+  }
+  .footer ul li .address span {
+    margin: 0;
+    font-size: 1.5rem;
   }
 }
 .home {
@@ -744,6 +757,7 @@ body {
   display: flex;
   align-items: center;
   color: #1a1a1a;
+  text-align: left;
 }
 .contact .contact__content .contact__body .contact__sections .contact__info li a:hover {
   color: #fcc719;
