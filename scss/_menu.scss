@@ -17,6 +17,12 @@
 
     li:nth-child(2){
       margin-bottom: 25px;
+      transition: all 0.3s ease-in-out;
+      
+        &:hover {
+        transform: scale(1.05);
+      
+    }
     }
   }
 }
