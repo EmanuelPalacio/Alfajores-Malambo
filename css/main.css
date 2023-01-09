@@ -126,6 +126,10 @@ body {
 }
 .menu .menu__list li:nth-child(2) {
   margin-bottom: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.menu .menu__list li:nth-child(2):hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 800px) {
@@ -731,10 +735,13 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .btn-contact:hover {
   cursor: pointer;
   transform: scale(1.1);
+  color: #ffffff;
 }
 .contact .contact__content .contact__body .contact__sections .contact__form .btn-contact:active {
   transform: scale(0.9);
